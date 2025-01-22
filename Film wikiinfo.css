@@ -1,0 +1,95 @@
+body{
+    height: 2500px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgb(63 0 152), rgb(43 0 88), rgb(57 0 63));
+}
+#nav{
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 99%;
+    position: absolute;
+    
+}
+ul{
+    list-style-type: none;
+    margin: -0.8%;
+    margin-top: 0.1%;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #111;
+}
+/*
+nav {
+    
+
+    display: flex;
+    align-items: center;
+}
+ 
+.menu1 {
+    display: flex;
+    list-style-type: none;
+}
+ 
+.menu1 li {
+    margin-right: 20px;
+    font-weight: bold;
+    color: white;
+}  
+ 
+#menu {
+    display: none;
+}
+ 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+*/
+@media (max-width: 1000px) {
+    .menu1 {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      right: 200%;
+      width: 100%;
+    }
+ 
+    .menu1 li {
+      margin: 10px 0;
+      text-align: center;
+    }
+ 
+    .hamburger {
+      display: flex;
+    }
+ 
+    #menu:checked + .hamburger + .menu1 {
+      display: flex;
+    }
+}
