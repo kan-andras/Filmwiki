@@ -23,19 +23,41 @@ ul{
     position: fixed;
     top: 0;
   }
-  li{
-    float: left;
-  }
-  li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  li a:hover{
-    background-color: #111;
-  }
-  .active{
-    background-color: #4CAF50;
-  }
+li{
+  float: left;
+}
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover{
+  background-color: #111;
+}
+.active{
+  background-color: #4CAF50;
+}
+.nagykep{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  height: 500px;
+  margin-top: 7%; 
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.nagykep{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+h1{
+  color: yellow;
+}
+.legfr{
+  margin-top: 50%;
+}
