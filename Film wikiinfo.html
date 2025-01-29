@@ -8,18 +8,29 @@
 </head>
 <body>
 
-    <nav id="nav">
-        <input type="checkbox" class="menu1">
-        <label for="menu1" class="hamburger">
-            <img id="ham" src="kepek/transparent-hd-white-menu-burger-icon-701751695037039ulxnzxwywi-removebg-preview.png" alt="Hamburger">
-            <img id="X" src="kepek/X-removebg-preview.png" alt="X">
-        </label>
-        <ul id="menu">
-            <li><a href="menu1">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
-    </nav>
+    <div class="mobile-container">
+        <div class="topnav">
+          <a href="#home" class="active"><img id="fimwikilogo" src="kepek/logo-removebg-preview.png" alt="logo"></a>
+        <div id="myLinks">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"><img id="ham" src="kepek/transparent-hd-white-menu-burger-icon-701751695037039ulxnzxwywi-removebg-preview.png" alt=""></i>
+          </a>
+    </div>
+    </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 </body>
 </html>
