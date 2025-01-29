@@ -46,6 +46,7 @@ ul{
 .slideshow-container {
   max-width: 85%;
   margin: auto;
+  margin-right: 15%;
   margin-top: 10%;
 }
 /* Next & previous buttons */
@@ -65,8 +66,8 @@ ul{
 }
 /* Position the "next button" to the right */
 .next {
-  right: 8%;
-  border-radius: 3px 0 0 5px;
+  right: 2%;
+  border-radius: 3px 0 0 2px;
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
@@ -88,7 +89,7 @@ ul{
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 5s;
 }
 @keyframes fade {
   from {opacity: .4}
