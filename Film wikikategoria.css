@@ -59,5 +59,13 @@ h1{
   color: yellow;
 }
 .legfr{
-  margin-top: 50%;
+  margin-top: 630px;
+  background-color: rgb(33 43 148);
+  margin-right: 1%;
+}
+td{
+  background-color: rgb(62 17 123);
+}
+table{
+  width: 100%;
 }
