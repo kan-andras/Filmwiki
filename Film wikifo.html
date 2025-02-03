@@ -16,29 +16,46 @@
         <li style="float:right"><a href="#about">About</a></li>
       </ul>
     </nav>
-            <!-- Slideshow container -->
     <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="kepek/senki1.jpeg" style="width:117%; height: 580px;">
+      </div>
+      <div class="mySlides fade">
+        <img src="kepek/senki2.jpg" style="width:117%; height: 580px;">
+      </div>
+      <div class="mySlides fade">
+        <img src="kepek/senki3.jpg" style="width:117%; height: 580px;">
+      </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+      <div class="scrollmenu">
+        <a href="#creed"><img src="kepek/Creed2.jpg" alt="Creed2" style="height: 300px;"></a>
+        <a href="#Big George"><img src="kepek/George Foreman.jpg" alt="Big George" style="height: 300px;"></a>
+        <a href="#Terrified"><img src="kepek/terrifier 3.jpg" alt="Terrified3" style="height: 300px;"></a>
+        <a href="#about">About</a>
+        <a href="#support">Support</a>
+        <a href="#blog">Blog</a>
+        <a href="#tools">Tools</a>  
+        <a href="#base">Base</a>
+        <a href="#custom">Custom</a>
+        <a href="#more">More</a>
+        <a href="#logo">Logo</a>
+        <a href="#friends">Friends</a>
+        <a href="#partners">Partners</a>
+        <a href="#people">People</a>
+        <a href="#work">Work</a>
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#support">Support</a>
 
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <img src="kepek/senki1.jpeg" style="width:117%; height:580px;">
-    </div>
-  
-    <div class="mySlides fade">
-      <img src="kepek/senki2.jpg" style="width:117%; height: 580px;">
-    </div>
-  
-    <div class="mySlides fade">
-      <img src="kepek/senki3.jpg" style="width:117%; height: 580px;">
-  <br>
-  
-  <!-- The dots/circles -->
-  <div style="text-align:center; margin-top: -5%;">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-        </div>
+      </div>
 
 
 
@@ -53,26 +70,26 @@
 
 
 
-        <script>
-          let slideIndex = 0;
-          showSlides();
-      
-          function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 5000); // Change image every 2 seconds
-                      }
-          </script>
+      <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+        </script>
 </body>
 </html>
