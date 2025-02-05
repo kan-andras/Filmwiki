@@ -62,7 +62,22 @@ h1{
   margin-top: 630px;
   background-color: rgb(33 43 148);
   margin-right: 1%;
+  margin-bottom: 15%;
 
+}
+.legfrp{
+  margin-right: auto;
+  margin-left: 2%;
+}
+.legfrkepek{
+  width: 200px; 
+  height: 300px; 
+  margin-left: 3%;
+  margin-top: 3%;
+  margin-right: 15px;
+}
+p{
+  color: white;
 }
 td{
   background-color: rgb(62 17 123);
@@ -81,6 +96,8 @@ table{
   
 .div1 {
    grid-area: 1 / 1 / 2 / 2; 
+   row-gap: 0px;
+   column-gap: 0px;
 }
 .div2 {
   grid-area: 1 / 2 / 2 / 3; 
