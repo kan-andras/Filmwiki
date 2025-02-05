@@ -35,6 +35,33 @@ body{
     display: block;
   }
 
+  #informaciok{
+    padding-top: 20%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  #fokep{
+    float: left;
+  }
+  #kep{
+    width: 80%;
+    height: 80%;
+  }
+  #idotartam{
+    float: left;
+    color: white;
+    left: 5%;
+    background-color: rgb(7, 13, 53, 0.5);
+    margin-left: 5%;
+    padding: 2%;
+  }
+  #megtekintes{
+    float: right;
+    color: white;
+    background-color: rgb(7, 13, 53, 0.5);
+    padding: 2%;
+  }
+
 @media (max-width: 400px) {
   .topnav {
     overflow: hidden;
