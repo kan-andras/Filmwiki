@@ -28,6 +28,7 @@ body{
     float: right;
     position: relative;
     bottom: 20%;
+    transform: translateY(-235%);
   }
   .active {
     background-image: linear-gradient(rgba(40, 0, 159, 0.95), rgba(41, 1, 98, 0.90), rgba(26, 0, 58, 0.95));
@@ -47,20 +48,13 @@ body{
     width: 80%;
     height: 80%;
   }
-  #idotartam{
-    float: left;
-    color: white;
-    left: 5%;
-    background-color: rgb(7, 13, 53, 0.5);
-    margin-left: 5%;
-    padding: 2%;
+#idotartam #megtekintes #mufaj{
+  
+}
+  #menu:hover{
+    background-color: #333; 
   }
-  #megtekintes{
-    float: right;
-    color: white;
-    background-color: rgb(7, 13, 53, 0.5);
-    padding: 2%;
-  }
+
 
 @media (max-width: 400px) {
   .topnav {
@@ -76,6 +70,9 @@ body{
   }
   .topnav a {
     display: block;
+  }
+  #myLinks{
+    transform: none;
   }
   #menu{
     background-color: rgba(40, 0, 159, 0.95);
