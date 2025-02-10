@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="Film wikicss.css">
 </head>
 <body>
+  <!--Navbar-->
     <nav id="navbar">
         <ul>
         <li><img src="kepek/logo-removebg-preview.png" alt="Logonk" id="logo"></li>
@@ -16,6 +17,7 @@
         <li style="float:right"><a href="#about">About</a></li>
       </ul>
     </nav>
+    <!--Slideshow-->
     <div class="slideshow-container">
       <div class="mySlides fade">
         <img src="kepek/senki1.jpeg" style="width:117%; height: 580px;">
@@ -33,12 +35,13 @@
         <span class="dot"></span> 
         <span class="dot"></span> 
       </div>
+      <!--Filmek cím!-->
         <div id="filmekdiv">
           <h2>Filmek</h2>
         </div>
+        <!--Scrollmenü-->
         <div class="scroll-container">
-          <button class="scroll-arrow scroll-left" onclick="scrollMenu(-300)">&#10094;</button> <!-- Left Arrow -->
-         
+          <button class="scroll-arrow scroll-left" onclick="scrollMenu(-300)">&#10094;</button> <!--Balra nyíl-->
           <div class="scrollmenu" id="scrollmenu">
               <a href="#creed"><img src="kepek/Creed2.jpg" alt="Creed2"></a>
               <a href="#Big George"><img src="kepek/George Foreman.jpg" alt="Big George"></a>
@@ -61,9 +64,30 @@
               <a href="#Pele"><img src="kepek/Pele.jpg" alt="Pele"></a>
               <a href="#Reacher"><img src="kepek/reacher.jpg" alt="Reacher"></a>
           </div>
-   
           <button class="scroll-arrow scroll-right" onclick="scrollMenu(300)">&#10095;</button> <!-- Right Arrow -->
       </div>
+      <!--Heti top grid-->
+      <div class="parent">
+        <div class="div1"><h2 style="color: rgb(252, 186, 3); text-align: center;"><strong>Heti top</strong></h2></div>
+        <div class="div2" style="height: 50px; padding-top: 10%; padding-left: 10%; font-size: 15px;"><h4>CREED III (2023)</h4></div>
+        <div class="div3" style="height: 40px; padding-top: 10%; padding-left: 10%; font-size: 15px; width: 100%;"><h4>Alien: Romulus (2024)</h4></div>
+        <div class="div4" style="height: 40px; padding-top: 10%; padding-left: 10%; font-size: 15px; width: 100%;"><h4>McGregor örök (2023)</h4></div>
+        <div class="div5" style="height: 40px; padding-top: 10%; padding-left: 10%; font-size: 15px; width: 100%;"><h4>Reacher (2022)</h4></div>
+        <div class="div6" style="height: 40px; padding-top: 10%; padding-left: 10%; font-size: 15px; width: 100%;"><h4>Chucky menyasszonya (1998)</h4></div>
+        <div class="div7" style="height: 40px; padding-top: 10%; padding-left: 10%; font-size: 15px; width: 100%;"><h4>A sötét lovag (2008)</h4></div>
+        <div class="div8" style="height: 40px; padding-top: 10%; padding-left: 10%; font-size: 15px; width: 100%;"><h4>Beckham (2023)</h4></div>
+        <div class="div9" style="height: 40px; padding-top: 10%; padding-left: 10%; font-size: 15px; width: 100%;"><h4>Rocky Balboa (2006)</h4></div>
+        <div class="div10" style="height: 40px; padding-top: 10%; padding-left: 10%; font-size: 15px; width: 100%;"><h4>Felemelkedés (2022)</h4></div>
+        <div class="div11" style="height: 40px; padding-top: 10%; padding-left: 10%; font-size: 15px; width: 100%;"><h4>Titánok (2018-2023)</h4></div>
+        <div class="div12"><img src="kepek/16 +.png" alt="16-os karika"></div>
+        <div class="div13"></div>
+        <div class="div14"></div>
+        <div class="div15"></div>
+        <div class="div16"></div>
+        <div class="div17"></div>
+        <div class="div18"></div>
+        <div class="div19"></div>
+        </div>
 
 
 
@@ -77,7 +101,7 @@
 
 
 
-
+      <!--Slideshow script-->
       <script>
         let slideIndex = 0;
         showSlides();
@@ -99,21 +123,22 @@
           setTimeout(showSlides, 4000); // Change image every 4 seconds
         }
         </script>
+        <!--Scrollbar script-->
         <script>
           const scrollContainer = document.getElementById("scrollmenu");
           const leftArrow = document.querySelector(".scroll-left");
           const rightArrow = document.querySelector(".scroll-right");
           function updateArrows() {
-              // Show left arrow if scrolled from the start
+              // Megmutatja a balra nyílat, ha elmozdult az eredeti pozícióról. 
               leftArrow.style.display = scrollContainer.scrollLeft > 0 ? "block" : "none";
              
-              // Show right arrow if there's more content to scroll
+              // Megmutatja a jobbra nyílat, ha van elem a scroll menüben.
               rightArrow.style.display = (scrollContainer.scrollLeft + scrollContainer.clientWidth) < scrollContainer.scrollWidth ? "block" : "none";
           }
           function scrollMenu(distance) {
               scrollContainer.scrollBy({ left: distance, behavior: 'smooth' });
           }
-          // Check arrows on load and when scrolling
+          // Vizsgálja a nyílakat mikor pörgeti a scroll menüt.
           window.onload = updateArrows;
           scrollContainer.addEventListener("scroll", updateArrows);
       </script>
