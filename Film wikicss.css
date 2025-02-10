@@ -76,20 +76,58 @@ ul{
   font-size: 25px;
   margin-left: 1%;
 }
-div.scrollmenu {
+/* Scroll Menu Container */
+.scroll-container {
+  position: relative;
+  width: 65%;
+  margin: auto;
+  overflow: hidden;
   background-color: rgba(26, 0, 58, 0.555);
-  overflow: auto;
-  white-space: nowrap;
-  margin-top: -2%;
+  padding: 10px 0;
   margin-left: 1%;
 }
-div.scrollmenu a {
+/* Scroll Menu */
+.scrollmenu {
+  display: flex;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  overflow-x: hidden;  /* Elrejti a görgetősávot */
+  scrollbar-width: none;  /* Firefoxhoz */
+}
+/* Hide scrollbar */
+.scrollmenu::-webkit-scrollbar {
+  display: none;
+}
+.scrollmenu a {
   display: inline-block;
-  color: white;
   text-align: center;
   padding: 14px;
   text-decoration: none;
 }
-div.scrollmenu a:hover {
-  background-color: #777;
+.scrollmenu img {
+  height: 300px;
+  margin-right: 10px;
+}
+/* Navigation Arrows */
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  z-index: 100;
+  display: none; /* Hidden by default */
+}
+.scroll-left {
+  left: 0;
+}
+.scroll-right {
+  right: 0;
+}
+.scroll-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }

@@ -33,30 +33,36 @@
         <span class="dot"></span> 
         <span class="dot"></span> 
       </div>
-      <div id="filmekdiv">
-        <h2>Filmek</h2>
-      </div>
-      <div class="scrollmenu">
-        <a href="#creed"><img src="kepek/Creed2.jpg" alt="Creed2" style="height: 300px;"></a>
-        <a href="#Big George"><img src="kepek/George Foreman.jpg" alt="Big George" style="height: 300px;"></a>
-        <a href="#Terrified"><img src="kepek/terrifier 3.jpg" alt="Terrified3" style="height: 300px;"></a>
-        <a href="#Bad Boys"><img src="kepek/BadBoys.jpg" alt="Bad Boys" style="height: 300px;"></a>
-        <a href="#support">Support</a>
-        <a href="#blog">Blog</a>
-        <a href="#tools">Tools</a>  
-        <a href="#base">Base</a>
-        <a href="#custom">Custom</a>
-        <a href="#more">More</a>
-        <a href="#logo">Logo</a>
-        <a href="#friends">Friends</a>
-        <a href="#partners">Partners</a>
-        <a href="#people">People</a>
-        <a href="#work">Work</a>
-        <a href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="#support">Support</a>
+        <div id="filmekdiv">
+          <h2>Filmek</h2>
+        </div>
+        <div class="scroll-container">
+          <button class="scroll-arrow scroll-left" onclick="scrollMenu(-300)">&#10094;</button> <!-- Left Arrow -->
+         
+          <div class="scrollmenu" id="scrollmenu">
+              <a href="#creed"><img src="kepek/Creed2.jpg" alt="Creed2"></a>
+              <a href="#Big George"><img src="kepek/George Foreman.jpg" alt="Big George"></a>
+              <a href="#Terrified"><img src="kepek/terrifier 3.jpg" alt="Terrified3"></a>
+              <a href="#Bad Boys"><img src="kepek/BadBoys.jpg" alt="Bad Boys"></a>
+              <a href="#Titanok"><img src="kepek/Titanok.jpg" alt="Titanok"></a>
+              <a href="#Transformers"><img src="kepek/transformers.jpg" alt="Transformers"></a>
+              <a href="#Venomutolso"><img src="kepek/VenomUtolsoMenet.jpg" alt="VenomutolsoMenet"></a>  
+              <a href="#Zorro"><img src="kepek/zorro.jpg" alt="Zorro"></a>
+              <a href="#Twister"><img src="kepek/twister.jpg" alt="Twister"></a>
+              <a href="#Tükrök"><img src="kepek/tükrök.jpg" alt="Tükrök"></a>
+              <a href="#Teletabi"><img src="kepek/teletabik.jpg" alt="Teletabik"></a>
+              <a href="#Ted"><img src="kepek/ted.jpg" alt="Ted"></a>
+              <a href="#Szokes"><img src="kepek/szokes.jpg" alt="Szökés"></a>
+              <a href="#TomesJerry"><img src="kepek/TomesJerry.jpg" alt="TomesJerry"></a>
+              <a href="#sötétlovag"><img src="kepek/sotetlovag.jpg" alt="Sötétlovag"></a>
+              <a href="#McGregor"><img src="kepek/McGregor.jpg" alt="McGregor"></a>
+              <a href="#RockyBalboa"><img src="kepek/RockyBalboa.jpg" alt="RockyBalboa"></a>
+              <a href="#Micimacko"><img src="kepek/micimacko.jpg" alt="Micimacko"></a>
+              <a href="#Pele"><img src="kepek/Pele.jpg" alt="Pele"></a>
+              <a href="#Reacher"><img src="kepek/reacher.jpg" alt="Reacher"></a>
+          </div>
+   
+          <button class="scroll-arrow scroll-right" onclick="scrollMenu(300)">&#10095;</button> <!-- Right Arrow -->
       </div>
 
 
@@ -93,5 +99,23 @@
           setTimeout(showSlides, 4000); // Change image every 4 seconds
         }
         </script>
+        <script>
+          const scrollContainer = document.getElementById("scrollmenu");
+          const leftArrow = document.querySelector(".scroll-left");
+          const rightArrow = document.querySelector(".scroll-right");
+          function updateArrows() {
+              // Show left arrow if scrolled from the start
+              leftArrow.style.display = scrollContainer.scrollLeft > 0 ? "block" : "none";
+             
+              // Show right arrow if there's more content to scroll
+              rightArrow.style.display = (scrollContainer.scrollLeft + scrollContainer.clientWidth) < scrollContainer.scrollWidth ? "block" : "none";
+          }
+          function scrollMenu(distance) {
+              scrollContainer.scrollBy({ left: distance, behavior: 'smooth' });
+          }
+          // Check arrows on load and when scrolling
+          window.onload = updateArrows;
+          scrollContainer.addEventListener("scroll", updateArrows);
+      </script>
 </body>
 </html>
