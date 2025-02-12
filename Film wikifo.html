@@ -68,25 +68,27 @@
       </div>
       <!--Heti top grid-->
       <div class="parent">
-        <div class="div1"><h2 style="color: rgb(252, 186, 3); text-align: center;"><strong>Heti top</strong></h2></div>
-        <div class="div2" style="height: 50px; padding-top: 10%; padding-left: 10%; font-size: 15px;"><h4>CREED III (2023)</h4></div>
-        <div class="div3" style="height: 40px; padding-top: 10%; padding-left: 10%; font-size: 15px; width: 100%;"><h4>Alien: Romulus (2024)</h4></div>
-        <div class="div4" style="height: 40px; padding-top: 10%; padding-left: 10%; font-size: 15px; width: 100%;"><h4>McGregor örök (2023)</h4></div>
-        <div class="div5" style="height: 40px; padding-top: 10%; padding-left: 10%; font-size: 15px; width: 100%;"><h4>Reacher (2022)</h4></div>
-        <div class="div6" style="height: 40px; padding-top: 10%; padding-left: 10%; font-size: 15px; width: 100%;"><h4>Chucky menyasszonya (1998)</h4></div>
-        <div class="div7" style="height: 40px; padding-top: 10%; padding-left: 10%; font-size: 15px; width: 100%;"><h4>A sötét lovag (2008)</h4></div>
-        <div class="div8" style="height: 40px; padding-top: 10%; padding-left: 10%; font-size: 15px; width: 100%;"><h4>Beckham (2023)</h4></div>
-        <div class="div9" style="height: 40px; padding-top: 10%; padding-left: 10%; font-size: 15px; width: 100%;"><h4>Rocky Balboa (2006)</h4></div>
-        <div class="div10" style="height: 40px; padding-top: 10%; padding-left: 10%; font-size: 15px; width: 100%;"><h4>Felemelkedés (2022)</h4></div>
-        <div class="div11" style="height: 40px; padding-top: 10%; padding-left: 10%; font-size: 15px; width: 100%;"><h4>Titánok (2018-2023)</h4></div>
-        <div class="div12"><img src="kepek/16 +.png" alt="16-os karika"></div>
-        <div class="div13"></div>
-        <div class="div14"></div>
-        <div class="div15"></div>
-        <div class="div16"></div>
-        <div class="div17"></div>
-        <div class="div18"></div>
-        <div class="div19"></div>
+        <div class="div1"><h2 style="color: rgb(252, 186, 3); text-align: center; width: 100%; font-size: 30px;"><strong>Heti top</strong></h2></div>
+        <div class="div2" style="height: 50px; margin-top: -1%;"> <h4>CREED III (2023)</h4></div>
+        <div class="div3" style="height: 50px;"> <h4>Alien: Romulus (2024)</h4></div>
+        <div class="div4" style="height: 50px;"> <h4>McGregor örök (2023)</h4></div>
+        <div class="div5" style="height: 50px;"> <h4>Reacher (2022)</h4></div>
+        <div class="div6" style="height: 50px;"> <h4>Chucky menyasszonya (1998)</h4></div>
+        <div class="div7" style="height: 50px;"> <h4>A sötét lovag (2008)</h4></div>
+        <div class="div8" style="height: 50px;"> <h4>Beckham (2023)</h4></div>
+        <div class="div9" style="height: 50px;"> <h4>Rocky Balboa (2006)</h4></div>
+        <div class="div10" style="height: 50px;"><h4>Felemelkedés (2022)</h4></div>
+        <div class="div11" style="height: 50px;"><h4>Titánok (2018-2023)</h4></div>
+        <div class="div12"> </div>
+        <div class="div13"> </div>
+        <div class="div14"> </div>
+        <div class="div15"> </div>
+        <div class="div16"> </div>
+        <div class="div17"> </div>
+        <div class="div18"> </div>
+        <div class="div19"> </div>
+        <div class="div20"> </div>
+        <div class="div21"> </div>
         </div>
 
 
@@ -124,23 +126,6 @@
         }
         </script>
         <!--Scrollbar script-->
-        <script>
-          const scrollContainer = document.getElementById("scrollmenu");
-          const leftArrow = document.querySelector(".scroll-left");
-          const rightArrow = document.querySelector(".scroll-right");
-          function updateArrows() {
-              // Megmutatja a balra nyílat, ha elmozdult az eredeti pozícióról. 
-              leftArrow.style.display = scrollContainer.scrollLeft > 0 ? "block" : "none";
-             
-              // Megmutatja a jobbra nyílat, ha van elem a scroll menüben.
-              rightArrow.style.display = (scrollContainer.scrollLeft + scrollContainer.clientWidth) < scrollContainer.scrollWidth ? "block" : "none";
-          }
-          function scrollMenu(distance) {
-              scrollContainer.scrollBy({ left: distance, behavior: 'smooth' });
-          }
-          // Vizsgálja a nyílakat mikor pörgeti a scroll menüt.
-          window.onload = updateArrows;
-          scrollContainer.addEventListener("scroll", updateArrows);
-      </script>
+        <script src="universal.js"></script>
 </body>
 </html>

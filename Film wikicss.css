@@ -135,12 +135,12 @@ ul{
 .parent {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: repeat(11, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   float: right;
-  width: 27%;
-  height: 29%;
+  width: 28%;
+  height: 40%;
   background-color: rgba(26, 0, 58, 0.95);
   margin-right: 0.5%;
   color: white;
@@ -155,12 +155,14 @@ ul{
   .div8 { grid-area: 8 / 1 / 9 / 2; }
   .div9 { grid-area: 9 / 1 / 10 / 2; }
   .div10 { grid-area: 10 / 1 / 11 / 2; }
-  .div11 { grid-area: 2 / 2 / 3 / 3; }
-  .div12 { grid-area: 3 / 2 / 4 / 3; }
-  .div13 { grid-area: 4 / 2 / 5 / 3; }
-  .div14 { grid-area: 5 / 2 / 6 / 3; }
-  .div15 { grid-area: 6 / 2 / 7 / 3; }
-  .div16 { grid-area: 7 / 2 / 8 / 3; }
-  .div17 { grid-area: 8 / 2 / 9 / 3; }
-  .div18 { grid-area: 9 / 2 / 10 / 3; }
-  .div19 { grid-area: 10 / 2 / 11 / 3; }
+  .div11 { grid-area: 11 / 1 / 12 / 2; }
+  .div12 { grid-area: 2 / 2 / 3 / 3; }
+  .div13 { grid-area: 3 / 2 / 4 / 3; }
+  .div14 { grid-area: 4 / 2 / 5 / 3; }
+  .div15 { grid-area: 5 / 2 / 6 / 3; }
+  .div16 { grid-area: 6 / 2 / 7 / 3; }
+  .div17 { grid-area: 7 / 2 / 8 / 3; }
+  .div18 { grid-area: 8 / 2 / 9 / 3; }
+  .div19 { grid-area: 9 / 2 / 10 / 3; }
+  .div20 { grid-area: 10 / 2 / 11 / 3; }
+  .div21 { grid-area: 11 / 2 / 12 / 3; }
