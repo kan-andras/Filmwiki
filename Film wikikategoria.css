@@ -1,5 +1,5 @@
 body{
-    height: 2500px;
+  height: 2000px;
   background-color: red; /* For browsers that do not support gradients */
   background-image: linear-gradient(rgb(63 0 152), rgb(43 0 88), rgb(57 0 63));
 }
@@ -255,4 +255,14 @@ table{
 .gfborito{
   width: 200px;
   height: 300px;
+}
+.lablec{
+  background-image: linear-gradient(rgb(33, 1, 78, 1),rgb(16, 0, 21, 1));
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-left: -8px;
+  margin-right: -6px;
 }
