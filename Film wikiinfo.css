@@ -55,13 +55,13 @@ body{
     background-color: #333; 
   }
   .container {
-    padding-left: 5%;
     padding-top: 13%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     max-width: 900px;
     width: 100%;
+    margin: auto;
 }
 .poster img {
     width: 90%;
@@ -111,8 +111,7 @@ body{
   height: 90%;
   padding-left: 5%;
 }
-
-@media (max-width: 400px) {
+@media (max-width: 576px) {
   .topnav {
     overflow: hidden;
     background-color: #333;
@@ -178,4 +177,30 @@ body{
   .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
   }
+  .container{
+    padding-top: 20%;
+    width: 85%;
+    padding-left: 6.5%;
+  }
+  .poster{
+    padding-left: 10%;
+  }
+  #youtube{
+    width: 40%;
+    padding-left: 5%;
+  }
+  #moviedrive{
+    width: 70%;
+    height: 85%;
+    padding-left: 8%;
+  }
+  .box {
+    grid-column: span 2;
+  }
+  .media-links2 {
+    display: none;
+}
+}
+@media (max-width: 768px) {
+
 }
