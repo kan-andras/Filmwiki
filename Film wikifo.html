@@ -9,14 +9,23 @@
 </head>
 <body>
   <!--Navbar-->
-    <nav id="navbar">
-        <ul>
-        <li><img src="kepek/logo-removebg-preview.png" alt="Logonk" id="logo"></li>
-        <li style="float:right"><a href="#news">News</a></li>
-        <li style="float:right"><a href="#contact">Contact</a></li>
-        <li style="float:right"><a href="#about">About</a></li>
-      </ul>
-    </nav>
+  <div class="mobile-container">
+    <div class="topnav">
+      <a href="#home" class="active"><img id="fimwikilogo" src="kepek/logo-removebg-preview.png" alt="logo"></a>
+    <div id="myLinks">
+        <a id="menu" href="#news" style="margin: auto; text-decoration: none; color: white; padding: 25px 15px;">Filmek</a>
+        <a id="menu" href="#contact" style="margin: auto; text-decoration: none; color: white; padding: 25px 15px;">Legfelkapottabb filmek</a>
+        <a id="menu" href="#about" style="margin: auto; text-decoration: none; color: white; padding: 25px 15px;">Sorozatok</a>
+    </div id="hamburger" >
+      <a href="javascript:void(0);" class="icon" class="container" onclick="myFunction(this)" >
+        <i class="fa fa-bars" onclick="lenyilas()">
+          <div class="bar1" class="ham"></div>
+          <div class="bar2" class="ham"></div>
+          <div class="bar3" class="ham"></div>
+        </i>
+      </a>
+    </div>
+  </div>
     <!--Slideshow-->
     <div class="slideshow-container">
       <div class="mySlides fade">
@@ -35,7 +44,7 @@
         <span class="dot"></span> 
         <span class="dot"></span> 
       </div>
-      <!--Filmek cím!-->
+      <!--Filmek cím-->
         <div id="filmekdiv">
           <h2>Filmek</h2>
         </div>
@@ -69,31 +78,119 @@
       <!--Heti top grid-->
       <div class="parent">
         <div class="div1"><h2 style="color: rgb(252, 186, 3); text-align: center; width: 100%; font-size: 30px;"><strong>Heti top</strong></h2></div>
-        <div class="div2" style="height: 50px; margin-top: -1%;"> <h4>CREED III (2023)</h4></div>
-        <div class="div3" style="height: 50px;"> <h4>Alien: Romulus (2024)</h4></div>
-        <div class="div4" style="height: 50px;"> <h4>McGregor örök (2023)</h4></div>
-        <div class="div5" style="height: 50px;"> <h4>Reacher (2022)</h4></div>
-        <div class="div6" style="height: 50px;"> <h4>Chucky menyasszonya (1998)</h4></div>
-        <div class="div7" style="height: 50px;"> <h4>A sötét lovag (2008)</h4></div>
-        <div class="div8" style="height: 50px;"> <h4>Beckham (2023)</h4></div>
-        <div class="div9" style="height: 50px;"> <h4>Rocky Balboa (2006)</h4></div>
-        <div class="div10" style="height: 50px;"><h4>Felemelkedés (2022)</h4></div>
-        <div class="div11" style="height: 50px;"><h4>Titánok (2018-2023)</h4></div>
-        <div class="div12"> </div>
-        <div class="div13"> </div>
-        <div class="div14"> </div>
-        <div class="div15"> </div>
-        <div class="div16"> </div>
-        <div class="div17"> </div>
-        <div class="div18"> </div>
-        <div class="div19"> </div>
-        <div class="div20"> </div>
-        <div class="div21"> </div>
+        <div class="div2" style="height: 40px; margin-top: -6%; margin-left: 8%;"> <h4>CREED III (2023)</h4></div>
+        <div class="div3" style="height: 40px; margin-top: -10%; margin-left: 8%;"> <h4>Alien: Romulus (2024)</h4></div>
+        <div class="div4" style="height: 40px; margin-top: -6%; margin-left: 8%;"> <h4>McGregor örök (2023)</h4></div>
+        <div class="div5" style="height: 40px; margin-top: -6%; margin-left: 8%;"> <h4>Reacher (2022)</h4></div>
+        <div class="div6" style="height: 40px; margin-top: -14%; margin-left: 8%;"> <h4>Chucky menyasszonya (1998)</h4></div>
+        <div class="div7" style="height: 40px; margin-top: -2%; margin-left: 8%;"> <h4>A sötét lovag (2008)</h4></div>
+        <div class="div8" style="height: 40px; margin-top: -6%; margin-left: 8%;"> <h4>Beckham (2023)</h4></div>
+        <div class="div9" style="height: 40px; margin-top: -6%; margin-left: 8%;"> <h4>Rocky Balboa (2006)</h4></div>
+        <div class="div10" style="height: 40px; margin-top: -6%; margin-left: 8%;"><h4>Felemelkedés (2022)</h4></div>
+        <div class="div11" style="height: 40px; margin-top: -10%;margin-left: 8%;"><h4>Titánok (2018-2023)</h4></div>
+        <div class="div12"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div13"> <img src="kepek/18+.png" alt="18+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div14"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div15"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div16"> <img src="kepek/18+.png" alt="18+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div17"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div18"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div19"> <img src="kepek/12 +.png" alt="12+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div20"> <img src="kepek/12 +.png" alt="12+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div21"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
         </div>
-
-
-
-
+        <!--Legnézettebb filmek-->
+        <div id="legnezfilm">
+          <h2>Legnézettebb filmek</h2>
+        </div>
+        <div class="scroll-container">
+          <button class="scroll-arrow scroll-left" onclick="scrollMenu(-300)">&#10094;</button> <!--Balra nyíl-->
+          <div class="scrollmenu" id="scrollmenu">
+              <a href="#Rocky3"><img src="kepek/Rocky3.jpg" alt="Rocky 3"></a>
+              <a href="#Bombardero"><img src="kepek/bombajo.jpg" alt="Bombardero"></a>
+              <a href="#Batmankezdodik"><img src="kepek/batmenkezdodik.jpg" alt="Batman Kezdődik"></a>
+              <a href="#RockyBalboa"><img src="kepek/RockyBalboa.jpg" alt="Rocky Balboa"></a>
+              <a href="#Titanok"><img src="" alt="Titanok"></a>
+              <a href="#Transformers"><img src="" alt="Transformers"></a>
+              <a href="#Venomutolso"><img src="" alt="VenomutolsoMenet"></a>  
+              <a href="#Zorro"><img src="" alt="Zorro"></a>
+              <a href="#Twister"><img src="" alt="Twister"></a>
+              <a href="#Tükrök"><img src="" alt="Tükrök"></a>
+              <a href="#Teletabi"><img src="" alt="Teletabik"></a>
+              <a href="#Ted"><img src="" alt="Ted"></a>
+              <a href="#Szokes"><img src="" alt="Szökés"></a>
+              <a href="#TomesJerry"><img src="" alt="TomesJerry"></a>
+              <a href="#sötétlovag"><img src="" alt="Sötétlovag"></a>
+              <a href="#McGregor"><img src="" alt="McGregor"></a>
+              <a href="#RockyBalboa"><img src="" alt="RockyBalboa"></a>
+              <a href="#Micimacko"><img src="" alt="Micimacko"></a>
+              <a href="#Pele"><img src="" alt="Pele"></a>
+              <a href="#Reacher"><img src="" alt="Reacher"></a>
+          </div>
+          <button class="scroll-arrow scroll-right" onclick="scrollMenu(300)">&#10095;</button> <!-- Right Arrow -->
+      </div>
+      <!--Havi top grid-->
+      <div class="parenthav">
+        <div class="div1"><h2 style="color: rgb(252, 186, 3); text-align: center; width: 100%; font-size: 30px;"><strong>Havi top</strong></h2></div>
+        <div class="div2" style="height: 40px; margin-top: -6%; margin-left: 8%;"> <h4>Pelé (2016)</h4></div>
+        <div class="div3" style="height: 40px; margin-top: -10%; margin-left: 8%;"> <h4>Creed II (2019)</h4></div>
+        <div class="div4" style="height: 40px; margin-top: -10%; margin-left: 8%;"> <h4>Micimackó: Vér és méz 2. (2024)</h4></div>
+        <div class="div5" style="height: 40px; margin-top: -10%; margin-left: 8%;"> <h4>Ketrecharc - A leszámolás (2011)</h4></div>
+        <div class="div6" style="height: 40px; margin-top: -14%; margin-left: 8%;"> <h4>Chucky menyasszonya (1998)</h4></div>
+        <div class="div7" style="height: 40px; margin-top: -2%; margin-left: 8%;"> <h4>Zorro (2024)</h4></div>
+        <div class="div8" style="height: 40px; margin-top: -6%; margin-left: 8%;"> <h4>Beetlejuice Beetlejuice (2024)</h4></div>
+        <div class="div9" style="height: 40px; margin-top: -4%; margin-left: 8%;"> <h4>Képzeletbeli (2024)</h4></div>
+        <div class="div10" style="height: 40px; margin-top: -6%; margin-left: 8%;"><h4>Teletabik (2022)</h4></div>
+        <div class="div11" style="height: 40px; margin-top: -10%;margin-left: 8%;"><h4>Gorilla bácsi (2005)</h4></div>
+        <div class="div12"> <img src="kepek/12 +.png" alt="12+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div13"> <img src="kepek/12 +.png" alt="12+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div14"> <img src="kepek/18+.png" alt="18+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div15"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div16"> <img src="kepek/12 +.png" alt="12+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div17"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div18"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div19"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div20"> <img src="kepek/12 +.png" alt="12+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div21"> <img src="kepek/12 +.png" alt="12+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        </div>
+        <!--Sorozatok-->
+        <div id="sorozatok">
+          <h2>Sorozatok</h2>
+        </div>
+        <!--Sorozat-->
+        <div class="scroll-containersor">
+          <button class="scroll-arrow scroll-left" onclick="scrollMenu(-300)">&#10094;</button> <!--Balra nyíl-->
+          <div class="scrollmenu" id="scrollmenu">
+              <a href="#Ted"><img src="kepek/ted.jpg" alt="Ted"></a>
+              <a href="#Halo"><img src="kepek/halo.jpg" alt="Halo"></a>
+              <a href="#Azutolsoleghajlito"><img src="kepek/avatar.jpg" alt="Az utolsó léghajlító"></a>
+              <a href="#TomesJerry"><img src="kepek/TomesJerry.jpg" alt="TomesJerry"></a>
+              <a href="#Titanok"><img src="" alt="Titanok"></a>
+              <a href="#Transformers"><img src="" alt="Transformers"></a>
+              <a href="#Venomutolso"><img src="" alt="VenomutolsoMenet"></a>  
+              <a href="#Zorro"><img src="" alt="Zorro"></a>
+              <a href="#Twister"><img src="" alt="Twister"></a>
+              <a href="#Tükrök"><img src="" alt="Tükrök"></a>
+              <a href="#Teletabi"><img src="" alt="Teletabik"></a>
+              <a href="#Ted"><img src="" alt="Ted"></a>
+              <a href="#Szokes"><img src="" alt="Szökés"></a>
+              <a href="#TomesJerry"><img src="" alt="TomesJerry"></a>
+              <a href="#sötétlovag"><img src="" alt="Sötétlovag"></a>
+              <a href="#McGregor"><img src="" alt="McGregor"></a>
+              <a href="#RockyBalboa"><img src="" alt="RockyBalboa"></a>
+              <a href="#Micimacko"><img src="" alt="Micimacko"></a>
+              <a href="#Pele"><img src="" alt="Pele"></a>
+              <a href="#Reacher"><img src="" alt="Reacher"></a>
+          </div>
+          <button class="scroll-arrow scroll-right" onclick="scrollMenu(300)">&#10095;</button> <!-- Right Arrow -->
+      </div>
+      <div class="parentvel">
+        <div class="div1"> </div>
+        <div class="div2"> </div>
+        <div class="div3"> </div>
+        <div class="div4"> </div>
+        <div class="div5"> </div>
+        </div>
 
 
 
@@ -125,6 +222,8 @@
           setTimeout(showSlides, 4000); // Change image every 4 seconds
         }
         </script>
+        <!--Hamburger script-->
+        <script src="hamburgerscript.js"></script>
         <!--Scrollbar script-->
         <script src="universal.js"></script>
 </body>
