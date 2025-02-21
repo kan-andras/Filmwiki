@@ -111,6 +111,15 @@ body{
   height: 90%;
   padding-left: 5%;
 }
+.media-links2 {
+  display: none;
+}
+#start{
+  width: 40%;
+}
+#megtekintes{
+  font-size: 40px;
+}
 @media (max-width: 576px) {
   .topnav {
     overflow: hidden;
@@ -156,7 +165,6 @@ body{
   }
   .container {
     display: inline-block;
-    cursor: pointer;
   }
   
   .bar1, .bar2, .bar3 {
@@ -197,10 +205,66 @@ body{
   .box {
     grid-column: span 2;
   }
-  .media-links2 {
+  .media-links {
     display: none;
+  }
+  .media-links2 {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    margin: auto;
 }
+.media-links2 img {
+    width: 50px;
+    height: 50px;
+}
+  #moviedrive1{
+    width: 100%;
+    height: 100%;
+  }
+  #youtube1{
+    width: 50%;
+    height: 100%;
+    padding-left: 5%;
+  }
+  .poster{
+    padding-bottom: 7%;
+  }
+  .details{
+    gap: 20px;
+  }
+  #start{
+    width: 30%;
+  }
+  h3{
+    font-size: x-large;
+  }
+  h2{
+    font-size: xx-large;
+  }
 }
 @media (max-width: 768px) {
-
+  .box {
+    grid-column: span 2;
+  }
+  .media-links{
+    display: none;
+  }
+  .media-links2{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    margin: auto;
+    padding-left: 20%;
+  }
+  #moviedrive1{
+    width: 200%;
+    height: 140%;
+    padding-left: 40%;
+  }
+  #youtube1{
+    width: 100%;
+    height: 100%;
+    padding-left: 10%;
+  }
 }
