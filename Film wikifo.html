@@ -8,24 +8,6 @@
     <link rel="stylesheet" href="Film wikicss.css">
 </head>
 <body>
-  <!--Navbar-->
-  <div class="mobile-container">
-    <div class="topnav">
-      <a href="#home" class="active"><img id="fimwikilogo" src="kepek/logo-removebg-preview.png" alt="logo"></a>
-    <div id="myLinks">
-        <a id="menu" href="#news" style="margin: auto; text-decoration: none; color: white; padding: 25px 15px;">Filmek</a>
-        <a id="menu" href="#contact" style="margin: auto; text-decoration: none; color: white; padding: 25px 15px;">Legfelkapottabb filmek</a>
-        <a id="menu" href="#about" style="margin: auto; text-decoration: none; color: white; padding: 25px 15px;">Sorozatok</a>
-    </div id="hamburger" >
-      <a href="javascript:void(0);" class="icon" class="container" onclick="myFunction(this)" >
-        <i class="fa fa-bars" onclick="lenyilas()">
-          <div class="bar1" class="ham"></div>
-          <div class="bar2" class="ham"></div>
-          <div class="bar3" class="ham"></div>
-        </i>
-      </a>
-    </div>
-  </div>
     <!--Slideshow-->
     <div class="slideshow-container">
       <div class="mySlides fade">
@@ -184,13 +166,22 @@
           </div>
           <button class="scroll-arrow scroll-right" onclick="scrollMenu(300)">&#10095;</button> <!-- Right Arrow -->
       </div>
-      <div class="parentvel">
-        <div class="div1"> </div>
-        <div class="div2"> </div>
-        <div class="div3"> </div>
-        <div class="div4"> </div>
-        <div class="div5"> </div>
+      <div class="parentszinvelemeny">
+        <div class="div1a"> <h3 style="text-align: center; font-size: 21px; color: rgb(199, 190, 190); margin-top: 1%;">Színész vélemények:</h3> </div>
+        <div class="div2a"> <img class="kepek" src="kepek/tomhardy.jpg" alt="tomhardy"></div>
+        <div class="div3a"> </div>
+        <div class="div4a"> </div>
+        <div class="div5a"> </div>
         </div>
+        <div class="parentvelemeny">
+          <div class="div1b"> <h3 style="text-align: center; font-size: 21px; color: rgb(199, 190, 190); margin-top: 1%;">Legfrissebb vélemények:</h3> </div>
+          <div class="div2b"> </div>
+          <div class="div3b"> </div>
+          <div class="div4b"> </div>
+          <div class="div5b"> </div>
+          <div class="div6b"> </div>
+          <div class="div7b"> </div>
+          </div>
 
 
 
@@ -199,7 +190,24 @@
 
 
 
-
+      <!--Navbar-->
+      <div class="mobile-container">
+        <div class="topnav">
+          <a href="#home" class="active"><img id="fimwikilogo" src="kepek/logo-removebg-preview.png" alt="logo"></a>
+        <div id="myLinks">
+            <a id="menu" href="#news" style="margin: auto; text-decoration: none; color: white; padding: 25px 15px;">Filmek</a>
+            <a id="menu" href="#contact" style="margin: auto; text-decoration: none; color: white; padding: 25px 15px;">Legfelkapottabb filmek</a>
+            <a id="menu" href="#about" style="margin: auto; text-decoration: none; color: white; padding: 25px 15px;">Sorozatok</a>
+        </div id="hamburger" >
+          <a href="javascript:void(0);" class="icon" class="container" onclick="myFunction(this)" >
+            <i class="fa fa-bars" onclick="lenyilas()">
+              <div class="bar1" class="ham"></div>
+              <div class="bar2" class="ham"></div>
+              <div class="bar3" class="ham"></div>
+            </i>
+          </a>
+        </div>
+      </div>
       <!--Slideshow script-->
       <script>
         let slideIndex = 0;
