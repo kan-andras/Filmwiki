@@ -8,14 +8,7 @@
     <link rel="stylesheet" href="Film wikikategoria.css">
 </head>
 <body>
-    <nav id="navbar">
-        <ul>
-        <li><img src="kepek/logo-removebg-preview.png" alt="Logonk" id="logo"></li>
-        <li style="float:right"><a href="#news">News</a></li>
-        <li style="float:right"><a href="#contact">Contact</a></li>
-        <li style="float:right"><a href="#about">About</a></li>
-      </ul>
-    </nav>
+    
         <a href="Film wikiinfo.html"><img  src="./kepek/VenomUtolsoMenetnagykep.jpg" alt="venom III" class="nagykep"></a>
     <div class="legfr">
         <h1>Legfrisseb filmek a kategóriában:</h1>
@@ -126,21 +119,40 @@
         <div class="gridlablec">
             <div class="divvv1">
                  <h2>Karbantartók:</h2>
-                 <ul>
-                    <li>fdfddfd</li>
-                    <li></li>
+                 <ul class="elsoul">
+                    <li><h3>+36301432765</h3></li>
+                    <li><h3>example@gmail.com</h3></li>
+                 </ul>
+                 <ul class="masodikul">
+                    <li>+36301432765</li>
+                    <li>example@gmail.com</li>
                  </ul>
             </div>
             <div class="divvv2">
                  <h2>Filmek elérhetősége:</h2>
-                 <table>
-                    <tr>
-                        <td><a href=""><img style="width: 200px; height: 100px;" src="./kepek/moviedrive.png" alt=""></a></td>
-                        <td><a href=""><img style="height: 100px; width: 80px; " src="./kepek/youtube-removebg-preview.png" alt=""></a></td>
-                    </tr>
-                 </table>
+                 <div style="display: flex; gap: 15px;">
+                    <a href="https://moviedrive.hu/kezdolap/"><img style="width: 85%; height: 70%;" src="./kepek/moviedrive.png" alt=""></a>
+                    <a href="https://www.youtube.com/"><img style="height: 70%; width: 55%; " src="./kepek/youtube-removebg-preview.png" alt=""></a>
+                 </div>
             </div>
         </div>
     </div>
+    <div class="mobile-container">
+        <div class="topnav">
+          <a href="#home" class="active"><img id="fimwikilogo" src="kepek/logo-removebg-preview.png" alt="logo"></a>
+        <div id="myLinks">
+            <a id="menu" href="#news" style="margin: auto; text-decoration: none; color: white; padding: 25px 15px;">Filmek</a>
+            <a id="menu" href="#contact" style="margin: auto; text-decoration: none; color: white; padding: 25px 15px;">Legfelkapottabb filmek</a>
+            <a id="menu" href="#about" style="margin: auto; text-decoration: none; color: white; padding: 25px 15px;">Sorozatok</a>
+        </div id="hamburger" >
+          <a href="javascript:void(0);" class="icon" class="container" onclick="myFunction(this)" >
+            <i class="fa fa-bars" onclick="lenyilas()">
+              <div class="bar1" class="ham"></div>
+              <div class="bar2" class="ham"></div>
+              <div class="bar3" class="ham"></div>
+            </i>
+          </a>
+        </div>
+      </div>
 </body>
 </html>
