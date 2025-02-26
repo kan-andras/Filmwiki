@@ -1,11 +1,11 @@
 body{
-    height: 2500px;
+    height: 2800px;
   background-color: purple; /* Olyan beállítás, amely csak akkor aktív, ha a böngésző nem támogatja a linear beállítást */
   background-image: linear-gradient(rgb(63 0 152), rgb(43 0 88), rgb(57 0 63));
 }
 /* navbar, menü */
 .mobile-container {
-  max-width: 100%;
+  max-width: 105%;
   position: absolute;
   list-style-type: none;
   margin: -0.8%;
@@ -80,13 +80,13 @@ body{
 #legnezfilm{
   color: rgb(252, 186, 3);
   margin-left: 1%;
-  margin-top: 33%;
+  margin-top: 38%;
   font-size: 20px;
 }
 #sorozatok{
   color: rgb(252, 186, 3);
   margin-left: 1%;
-  margin-top: 33%;
+  margin-top: 36%;
   font-size: 20px;
   height: 12px;
 }
@@ -111,7 +111,7 @@ body{
   background-color: rgba(26, 0, 58, 0.555);
   padding: 10px 0;
   margin-left: 1%;
-  margin-top: 4.2%;
+  margin-top: 7%;
 }
 /* Scroll Menu */
 .scrollmenu {
@@ -278,6 +278,8 @@ body{
           height: 140px;
           width: 50%;
           padding-left: 15%;}
+  /* Lábléc */
+  
   /*Média queri*/
   @media (max-width: 576px) {
     .topnav {
