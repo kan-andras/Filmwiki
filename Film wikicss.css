@@ -238,9 +238,9 @@ body{
       grid-column-gap: 0px;
       grid-row-gap: 0px;
       float: left;
-      margin-top: 2%;
+      margin-top: 7%;
       width: 40%;
-      height: 300px;
+      height: 500px;
       margin-left: 8%;
       background-color: rgb(26, 0, 58);
       }
@@ -261,9 +261,9 @@ body{
         grid-row-gap: 0px;
         float: right;
         width: 40%;
-        height: 300px;
+        height: 500px;
         margin-right: 8%;
-        margin-top: 2%;
+        margin-top: 6%;
         background-color: rgb(26, 0, 58);
         }
         .div1b { grid-area: 1 / 1 / 2 / 2; }
@@ -273,11 +273,28 @@ body{
         .div5b { grid-area: 5 / 1 / 6 / 2; }
         .div6b { grid-area: 6 / 1 / 7 / 2; }
         .div7b { grid-area: 7 / 1 / 8 / 2; }
-        .kepek{
+        #kep1{
           float: left;
-          height: 140px;
+          height: 165px;
           width: 50%;
-          padding-left: 15%;}
+          padding-left: 15%;
+        margin-top: -20%;}
+        #kep2{
+          float: left;
+          height: 165px;
+          width: 50%;
+          padding-left: 15%;
+        margin-top: -25%;
+        }
+        #kepszoveg1{
+          margin-top: 50%;
+          color:white;
+          margin-left: 15%;
+        }
+        #kepszoveg2{
+          color:white;
+          margin-left: 8%;
+        }
   /* Lábléc */
   
   /*Média queri*/
