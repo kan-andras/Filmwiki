@@ -275,19 +275,19 @@ body{
         .div7b { grid-area: 7 / 1 / 8 / 2; }
         #kep1{
           float: left;
-          height: 165px;
+          height: 150px;
           width: 50%;
           padding-left: 15%;
-        margin-top: -20%;}
+        margin-top: 2%;}
         #kep2{
           float: left;
-          height: 165px;
+          height: 160px;
           width: 50%;
           padding-left: 15%;
-        margin-top: -25%;
+        padding-top: -5%;
         }
         #kepszoveg1{
-          margin-top: 50%;
+          margin-top: 75%;
           color:white;
           margin-left: 15%;
         }
