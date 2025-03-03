@@ -58,7 +58,7 @@ body{
 .container {
     display: flex;
     max-width: 1000px;
-    margin: 200px auto 0;
+    margin: auto 0;
     padding: 10%;
     padding-right: 13%;
 }
@@ -113,7 +113,7 @@ h1 {
   font-size: 40px;
 }
 #kamera{
-  width: 15%;
+  width: 25%;
 }
 .info-box {
     background: rgba(7, 13, 53, 0.50);
@@ -135,6 +135,7 @@ h1 {
 .description {
     font-size: 16px;
     line-height: 1.5;
+    font-size: 20px;
 }
 #kep1{
   width: 30%;
@@ -151,6 +152,7 @@ h1 {
 .description1{
   display: none;
 }
+
   @media (max-width: 800px) {
     .container {
         flex-direction: row;
@@ -194,8 +196,8 @@ h1 {
     }
     .description1{
       display: inline;
-      font-size: 16px;
       line-height: 1.5;
+      font-size: 20px;
     }
     #szelesseg{
       padding-left: 5%;
@@ -203,8 +205,12 @@ h1 {
     }
     .film-image {
       width: 103%;
-      padding-top: 30%;
+      padding-top: 45%;
     }
+    #kamera{
+      width: 50%;
+    }
+    
 }
 
 @media (max-width: 576px) {
@@ -290,5 +296,13 @@ h1 {
   }
   .links {
     display: none;
+  }
+  #kamera{
+    width: 25%;
+  }
+  .description1{
+    display: inline;
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
