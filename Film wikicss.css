@@ -238,7 +238,7 @@ body{
       grid-column-gap: 0px;
       grid-row-gap: 0px;
       float: left;
-      margin-top: 7%;
+      margin-top: 15%;
       width: 40%;
       height: 500px;
       margin-left: 8%;
@@ -253,26 +253,30 @@ body{
       .div4a { grid-area: 2 / 2 / 3 / 3; }
       .div5a { grid-area: 3 / 2 / 4 / 3; }
       /*Vélemények grid*/
-      .parentvelemeny {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(7, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        float: right;
-        width: 40%;
-        height: 500px;
-        margin-right: 8%;
-        margin-top: 6%;
-        background-color: rgb(26, 0, 58);
-        }
-        .div1b { grid-area: 1 / 1 / 2 / 2; }
-        .div2b { grid-area: 2 / 1 / 3 / 2; }
-        .div3b { grid-area: 3 / 1 / 4 / 2; }
-        .div4b { grid-area: 4 / 1 / 5 / 2; }
-        .div5b { grid-area: 5 / 1 / 6 / 2; }
-        .div6b { grid-area: 6 / 1 / 7 / 2; }
-        .div7b { grid-area: 7 / 1 / 8 / 2; }
+        .parentvelemeny {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(7, 1fr);
+          grid-column-gap: 0px;
+          grid-row-gap: 0px;
+          float: right;
+          width: 40%;
+          height: 500px;
+          margin-right: 8%;
+          margin-top: 14%;
+          background-color: rgb(26, 0, 58);
+          }
+          
+          .div1b { grid-area: 1 / 1 / 2 / 3; }
+          .div2b { grid-area: 2 / 1 / 3 / 2; }
+          .div3b { grid-area: 2 / 2 / 3 / 3; }
+          .div4b { grid-area: 3 / 1 / 4 / 3; }
+          .div5b { grid-area: 4 / 1 / 5 / 2; }
+          .div6b { grid-area: 4 / 2 / 5 / 3; }
+          .div7b { grid-area: 5 / 1 / 6 / 3; }
+          .div8b { grid-area: 6 / 1 / 7 / 2; }
+          .div9b { grid-area: 6 / 2 / 7 / 3; }
+          .div10b { grid-area: 7 / 1 / 8 / 3; }
         #kep1{
           float: left;
           height: 150px;
@@ -295,8 +299,23 @@ body{
           color:white;
           margin-left: 8%;
         }
-  /* Lábléc */
-  
+  /* Szöveg,vélemények */
+  .h6cimek{
+    color: white;
+    font-size: 16px;
+    margin-top: 6%;
+    margin-left: 6%;
+  }
+  .h8cimek{
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Közösségi vélemény képek */
+  .kepekvel{
+    margin-left: 8%;
+  }
   /*Média queri*/
   @media (max-width: 576px) {
     .topnav {
