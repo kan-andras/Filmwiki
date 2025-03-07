@@ -299,8 +299,23 @@ body{
           color:white;
           margin-left: 8%;
         }
-  /* Lábléc */
-  
+  /* Szöveg,vélemények */
+  .h6cimek{
+    color: white;
+    font-size: 16px;
+    margin-top: 6%;
+    margin-left: 6%;
+  }
+  .h8cimek{
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Közösségi vélemény képek */
+  .kepekvel{
+    margin-left: 8%;
+  }
   /*Média queri*/
   @media (max-width: 576px) {
     .topnav {
