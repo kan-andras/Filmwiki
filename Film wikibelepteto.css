@@ -1,0 +1,5 @@
+body{
+    background: url(kepek/Image.jpg);
+    filter: brightness(50%);
+    background-size: cover;
+}
