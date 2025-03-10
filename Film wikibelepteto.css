@@ -1,5 +1,23 @@
 body{
-    background: url(kepek/Image.jpg);
-    filter: brightness(50%);
+    background: url(kepek/Image\ 1.png);
+    background-color: black;
     background-size: cover;
+}
+h1{
+    font-size: 80px;
+    font-style: italic;
+    color: white;
+}
+#kamera{
+    width: 16%;
+}
+#eleje{
+    text-align: center;
+    padding-bottom: 9%;
+}
+#fokep{
+    text-align: center;
+}
+#profilkep{
+    width: 15%;
 }
