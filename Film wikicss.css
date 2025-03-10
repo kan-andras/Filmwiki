@@ -1,5 +1,5 @@
 body{
-    height: 2800px;
+    height: 3500px;
   background-color: purple; /* Olyan beállítás, amely csak akkor aktív, ha a böngésző nem támogatja a linear beállítást */
   background-image: linear-gradient(rgb(63 0 152), rgb(43 0 88), rgb(57 0 63));
 }
@@ -316,6 +316,23 @@ body{
   .kepekvel{
     margin-left: 8%;
   }
+  /* Lábléc */
+  .parentlab {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-top: 100%;
+    border: white solid 1px;
+    background-color: black;
+    }
+    .div1lab { grid-area: 1 / 1 / 2 / 2; }
+    .div2lab { grid-area: 2 / 1 / 3 / 2; }
+    .div3lab { grid-area: 3 / 1 / 4 / 2; }
+    .div4lab { grid-area: 1 / 2 / 2 / 3; }
+    .div5lab { grid-area: 2 / 2 / 3 / 3; }
+    .div6lab { grid-area: 3 / 2 / 4 / 3; }
   /*Média queri*/
   @media (max-width: 576px) {
     .topnav {
@@ -379,3 +396,4 @@ body{
       transform: translate(0, -11px) rotate(45deg);
     }
   }
+  
