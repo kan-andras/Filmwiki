@@ -358,7 +358,9 @@ table{
   
 }
 .legfrp{
-  font-size: 80%;
+  /* font-size: 80%;
+   */
+   font-size: medium;
 }
 @media screen and (max-width: 768px) {
     .div1{
