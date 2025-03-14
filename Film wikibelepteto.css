@@ -53,11 +53,17 @@ button:hover {
   
 .container {
     padding: 16px;
-    padding-left: 10%;
-    padding-right: 10%;
 }
 
 .szo{
     color: white;
+    font-size: x-large;
 }
-
+#belepo{
+    margin: auto;
+    width: 70%;
+    background-color: rgba(50, 50, 50, 0.90);
+}
+#belepogomb{
+    font-size: larger;
+}
