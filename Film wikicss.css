@@ -354,6 +354,14 @@ body{
     margin-top: -10%;
     height: 80%;
   }
+  #youtube{
+    width: 20%;
+    height: 50%;
+  }
+  #movidrive{
+    width: 100%;
+    height: 90%;
+   }
   /*Média queri*/
   @media (max-width: 576px) {
     .topnav {
@@ -417,4 +425,3 @@ body{
       transform: translate(0, -11px) rotate(45deg);
     }
   }
-  
