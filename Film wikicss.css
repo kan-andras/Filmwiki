@@ -102,7 +102,18 @@ body{
   margin-left: 1%;
   margin-top: 1%;
 }
-.scroll-containersor {
+.scroll-containerketto {
+  position: relative;
+  width: 73%;
+  margin: auto;
+  float: left;
+  overflow: hidden;
+  background-color: rgba(26, 0, 58, 0.555);
+  padding: 10px 0;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+.scroll-containerharom {
   position: relative;
   width: 73%;
   margin: auto;
@@ -121,6 +132,13 @@ body{
   overflow-x: hidden;  /* Elrejti a görgetősávot */
   scrollbar-width: none;  /* Firefoxhoz */
 }
+.scrollmenuketto {
+  display: flex;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  overflow-x: hidden;  /* Elrejti a görgetősávot */
+  scrollbar-width: none;  /* Firefoxhoz */
+}
 /* Scrollmenu elrejtése */
 .scrollmenu::-webkit-scrollbar {
   display: none;
@@ -132,6 +150,19 @@ body{
   text-decoration: none;
 }
 .scrollmenu img {
+  height: 300px;
+  margin-right: 10px;
+}
+.scrollmenu::-webkit-scrollbar {
+  display: none;
+}
+.scrollmenuketto a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+.scrollmenuketto img {
   height: 300px;
   margin-right: 10px;
 }
@@ -157,6 +188,45 @@ body{
 }
 .scroll-arrow:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+.scroll-arrowk {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  z-index: 100;
+}
+.scroll-bal {
+  left: 0;
+}
+.scroll-jobb {
+  right: 0;
+}
+.scroll-arrowk:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.scroll-arrowharom {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  z-index: 100;
+}
+.scroll-bal1 {
+  left: 0;
+}
+.scroll-jobb1 {
+  right: 0;
 }
 /*Heti top*/
 .parent {
@@ -354,6 +424,14 @@ body{
     margin-top: -10%;
     height: 80%;
   }
+  #youtube{
+    width: 20%;
+    height: 50%;
+  }
+  #movidrive{
+    width: 100%;
+    height: 90%;
+   }
   /*Média queri*/
   @media (max-width: 576px) {
     .topnav {
@@ -417,4 +495,3 @@ body{
       transform: translate(0, -11px) rotate(45deg);
     }
   }
-  

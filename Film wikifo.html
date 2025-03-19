@@ -85,9 +85,9 @@
         <div id="legnezfilm">
           <h2>Legnézettebb filmek</h2>
         </div>
-        <div class="scroll-container">
-          <button class="scroll-arrow scroll-left" onclick="scrollMenu(-300)">&#10094;</button> <!--Balra nyíl-->
-          <div class="scrollmenu" id="scrollmenu">
+        <div class="scroll-containerketto">
+          <button class="scroll-arrowk scroll-bal" onclick="scrollMenu2(-300)">&#10094;</button> <!--Balra nyíl-->
+          <div class="scrollmenuketto" id="scrollmenuketto">
               <a href="#Rocky3"><img src="kepek/Rocky3.jpg" alt="Rocky 3"></a>
               <a href="#Bombardero"><img src="kepek/bombajo.jpg" alt="Bombardero"></a>
               <a href="#Batmankezdodik"><img src="kepek/batmenkezdodik.jpg" alt="Batman Kezdődik"></a>
@@ -109,7 +109,7 @@
               <a href="#Pele"><img src="" alt="Pele"></a>
               <a href="#Reacher"><img src="" alt="Reacher"></a>
           </div>
-          <button class="scroll-arrow scroll-right" onclick="scrollMenu(300)">&#10095;</button> <!-- Right Arrow -->
+          <button class="scroll-arrowk scroll-jobb" onclick="scrollMenu2(300)">&#10095;</button> <!-- Right Arrow -->
       </div>
       <!--Havi top grid-->
       <div class="parenthav">
@@ -140,8 +140,8 @@
           <h2>Sorozatok</h2>
         </div>
         <!--Sorozat container-->
-        <div class="scroll-containersor">
-          <button class="scroll-arrow scroll-left" onclick="scrollMenu(-300)">&#10094;</button> <!--Balra nyíl-->
+        <div class="scroll-containerharom">
+          <button class="scroll-arrowharom scroll-bal1" onclick="scrollMenu3(-300)">&#10094;</button> <!--Balra nyíl-->
           <div class="scrollmenu" id="scrollmenu">
               <a href="#Ted"><img src="kepek/ted.jpg" alt="Ted"></a>
               <a href="#Halo"><img src="kepek/halo.jpg" alt="Halo"></a>
@@ -164,7 +164,7 @@
               <a href="#Pele"><img src="" alt="Pele"></a>
               <a href="#Reacher"><img src="" alt="Reacher"></a>
           </div>
-          <button class="scroll-arrow scroll-right" onclick="scrollMenu(300)">&#10095;</button> <!-- Right Arrow -->
+          <button class="scroll-arrowharom scroll-jobb1" onclick="scrollMenu3(300)">&#10095;</button> <!-- Jobbra nyíl -->
       </div>
       <div class="parentszinvelemeny">
         <div class="div1a"> <h3 style="text-align: center; font-size: 21px; color: rgb(199, 190, 190); margin-top: 1%;">Színész vélemények:</h3> </div>
@@ -186,7 +186,7 @@
             <div class="div4b" style="margin-left: 3%;"> <h8 class="h8cimek">Az első Venom még tetszett, a Venom 2. már nem, ezt pedig nem is tudtam végignézni.</h8></div>
             <div class="div5b"> <img src="kepek/Sandor.png" alt="Vélemények" class="kepekvel"></div>
             <div class="div6b"> <h6 class="h6cimek">vélemény a(z) Tom és Jerry-ről</h6></div>
-            <div class="div7b" style="margin-left: 3%;"> <h8 class="h8cimek">Nagyon szórakoztató TV műsor főleg gyerekes családnak ajánlanám.</h8>            </h8></div>
+            <div class="div7b" style="margin-left: 3%;"> <h8 class="h8cimek">Nagyon szórakoztató TV műsor főleg gyerekes családnak ajánlanám.</h8></div>
             <div class="div8b"> <img src="kepek/gombocka.png" alt="Vélemények" class="kepekvel"></div>
             <div class="div9b"> <h6 class="h6cimek">vélemény a(z) Avatár Az Utolsó Léghajlító-ról</h6></div>
             <div class="div10b" style="margin-left: 3%;"> <h8 class="h8cimek">Az eredeti film nagyon elsietettnek és unalmasnak éreztem de a sorozat kiküszöbölte a film hibáit.</h8></div>
@@ -217,7 +217,8 @@
         <div class="div2lab"> <ul><li class="kapcsadat">+36301432765</li></ul></div>
         <div class="div3lab"> <ul><li class="kapcsad">example23@gmail.com</li></ul></div>
         <div class="div4lab"> <h2 id="Fil">Filmek elérhetősége:</h2></div>
-        <div class="div5lab"> <div style="float: left; color: white;">asd</div> <div style="float: right; color: white;">asd</div></div>
+        <div class="div5lab"> <div style="float: left; color: white; width: 30%; margin-top: -5%;"><img src="kepek/moviedrive.png" alt="MovieDrive" id="movidrive"></div> 
+        <div style="float: right; color: white; width: 50%; margin-top: -5%;"><img src="kepek/youtube-removebg-preview.png" alt="Youtube" id="youtube"></div></div>
         <div class="div6lab"> </div>
         </div>
       <!--Slideshow script-->
@@ -246,5 +247,41 @@
         <script src="hamburgerscript.js"></script>
         <!--Scrollbar script-->
         <script src="universal.js"></script>
+        <script>
+        const scrollContainerketto = document.getElementById("scrollmenu");
+          const balArrow = document.querySelector(".scroll-bal");
+          const jobbArrow = document.querySelector(".scroll-jobb");
+          function valamiArrows() {
+              // Megmutatja a balra nyílat, ha elmozdult az eredeti pozícióról. 
+              leftArrow.style.display = scrollContainer.scrollLeft > 0 ? "block" : "none";
+             
+              // Megmutatja a jobbra nyílat, ha van elem a scroll menüben.
+              rightArrow.style.display = (scrollContainer.scrollLeft + scrollContainer.clientWidth) < scrollContainer.scrollWidth ? "block" : "none";
+          }
+          function scrollMenu2(distance) {
+              scrollContainer.scrollBy({ left: distance, behavior: 'smooth' });
+          }
+          // Vizsgálja a nyílakat mikor pörgeti a scroll menüt.
+          window.onload = valamiArrows;
+          scrollContainer.addEventListener("scroll", valamiArrows);
+          </script>
+          <script>
+            const scrollContainerharom = document.getElementById("scrollmenu");
+              const bal1Arrow = document.querySelector(".scroll-bal1");
+              const jobb1Arrow = document.querySelector(".scroll-jobb1");
+              function updateArrows() {
+                  // Megmutatja a balra nyílat, ha elmozdult az eredeti pozícióról. 
+                  leftArrow.style.display = scrollContainer.scrollLeft > 0 ? "block" : "none";
+                 
+                  // Megmutatja a jobbra nyílat, ha van elem a scroll menüben.
+                  rightArrow.style.display = (scrollContainer.scrollLeft + scrollContainer.clientWidth) < scrollContainer.scrollWidth ? "block" : "none";
+              }
+              function scrollMenu3(distance) {
+                  scrollContainer.scrollBy({ left: distance, behavior: 'smooth' });
+              }
+              // Vizsgálja a nyílakat mikor pörgeti a scroll menüt.
+              window.onload = updateArrows;
+              scrollContainer.addEventListener("scroll", updateArrows);
+              </script>
 </body>
 </html>
