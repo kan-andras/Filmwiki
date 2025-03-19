@@ -122,12 +122,6 @@ input:focus + label,
   font-size: var(--small-font-size);
 }
 
-input[type="checkbox"] {
-  accent-color: black;
-  transform: scale(1.2);
-  margin-right: 5px;
-}
-
 a {
   color: white;
   text-decoration: none;
