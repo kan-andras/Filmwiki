@@ -16,29 +16,24 @@
     </div>
 
     <div class="login">
-        <form action="">
-          <h1 id="login">Login</h1>
-      
-          <div class="input-field">
-            <i class="fa-solid fa-user"></i>
-            <input type="email" required placeholder=" " value="">
-            <label>Email</label>
-          </div>
-      
-          <div class="input-field">
-            <i class="fa-solid fa-lock"></i>
-            <input type="password" required placeholder=" ">
-            <label for="login-pass">Password</label>
-            <i class="fa-regular fa-eye-slash eye"></i>
-          </div>
-          <a href="Film wikifo.html" type="submit"></a><button type="submit" onClick="myFunction()">Submit</button>
+        <form id="loginForm" onsubmit="return validateForm()">
+            <h1 id="login">Login</h1>
+        
+            <div class="input-field">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="username" required placeholder=" " value="">
+                <label>Felhasználónév</label>
+            </div>
+        
+            <div class="input-field">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="password" required placeholder=" ">
+                <label for="login-pass">Jelszó</label>
+                <i class="fa-regular fa-eye-slash eye"></i>
+            </div>
+            <button type="submit">Submit</button>
         </form>
     </div>
-
-    <script>
-      function myFunction() {
-        window.location.href="Film wikifo.html";
-      }
-    </script>
+    <script src="login.js"></script>
 </body>
 </html>
