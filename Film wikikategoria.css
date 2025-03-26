@@ -154,8 +154,6 @@ body{
     position: relative;
     text-align: center;
     color: white;
-  }
-  .nagykep{
     position: absolute;
     top: 8px;
     left: 16px;
@@ -558,4 +556,72 @@ table{
       margin-right: 4%;
     }
   }
+
+.navbar {
+  overflow: hidden;
+  background: linear-gradient(to bottom, #28009f 0%, #1a003a 100%);
+  margin-left: -0.7%;
+  margin-right: -0.4%;
+  margin-top: -1%;
+  
+}
+
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit; 
+  margin: 0; 
+  float: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px;
+  z-index: 1;
+}
+.dropdown-content .header {
+  /* padding: 16px; */
+  color: white;
+  background-color: rgb(26, 0, 58);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.column {
+  /* float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 250px; */
+}
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
   
