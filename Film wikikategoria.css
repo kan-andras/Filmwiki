@@ -624,4 +624,19 @@ table{
   display: table;
   clear: both;
 }
-  
+
+@media screen and (max-width:576px) {
+  .menugomb{
+    display: none;
+  }
+  .dropdown{
+    display: none;
+  }
+}
+  .menugomb{
+    margin-top: 20px;
+  }
+  .dropdown{
+    margin-top: 20px;
+  }
+
