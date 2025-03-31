@@ -2,25 +2,23 @@ body{
     background: url(kepek/Image\ 1.png);
     background-color: black;
     background-size: cover;
+    
 }
 h1{
     font-size: 80px;
     font-style: italic;
     color: white;
 }
-#kamera{
-    width: 16%;
-}
 #eleje{
     text-align: center;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
 }
 #fokep{
     text-align: center;
 }
 #profilkep{
     width: 15%;
-    padding-bottom: 8%;
+    padding-bottom: 5%;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
@@ -31,11 +29,6 @@ h1{
   --normal-font-size: 1.3rem;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-}
 
 .login {
   position: relative;
