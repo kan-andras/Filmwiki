@@ -139,6 +139,13 @@ body{
   overflow-x: hidden;  /* Elrejti a görgetősávot */
   scrollbar-width: none;  /* Firefoxhoz */
 }
+.scrollmenuharom {
+  display: flex;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  overflow-x: hidden;  /* Elrejti a görgetősávot */
+  scrollbar-width: none;  /* Firefoxhoz */
+}
 /* Scrollmenu elrejtése */
 .scrollmenu::-webkit-scrollbar {
   display: none;
@@ -148,11 +155,18 @@ body{
   text-align: center;
   padding: 14px;
   text-decoration: none;
+  position: relative;  /* A pozicionálás szükséges a szövegdobozhoz */
 }
 .scrollmenu img {
-  height: 300px;
+  height: 250px;
   margin-right: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Animáció a képekhez */
 }
+.scrollmenu a:hover img {
+  transform: scale(1.1);  /* Kép megnövelése hover hatásra */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);  /* Árnyék intenzitásának növelése */
+}
+
 .scrollmenu::-webkit-scrollbar {
   display: none;
 }
@@ -163,8 +177,41 @@ body{
   text-decoration: none;
 }
 .scrollmenuketto img {
-  height: 300px;
+  height: 250px;
   margin-right: 10px;
+}
+.scrollmenuharom a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+.scrollmenuharom img {
+  height: 250px;
+  margin-right: 10px;
+}
+/* Képek hoverje */
+.scrollmenu a .hover-text {
+  display: none;  /* Alapértelmezetten rejtve van */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;  /* Zökkenőmentes megjelenítés */
+}
+
+/* Hover hatásra előbukkanó szöveg */
+.scrollmenu a:hover .hover-text {
+  display: block;
+  opacity: 1;  /* Megjeleníti a szöveget */
 }
 /* Navigációs nyílak */
 .scroll-arrow {
@@ -432,83 +479,6 @@ body{
     width: 100%;
     height: 90%;
    }
-   /* Kép hoverek */
-   #container {
-    position: relative;
-    width: 50%;
-  }
-  
-  #image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  #overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color:rgba(128, 128, 128, 0.501);
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
-  }
-  
-  #container:hover #overlay {
-    height: 100%;
-  }
-  
-  #text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  #container1 {
-    position: relative;
-    width: 50%;
-  }
-  
-  #image1 {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  #overlay1 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color:rgba(128, 128, 128, 0.501);
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
-  }
-  
-  #container1:hover #overlay1 {
-    height: 100%;
-  }
-  
-  #text1 {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
   /*Média queri*/
   @media (max-width: 576px) {
     .topnav {
