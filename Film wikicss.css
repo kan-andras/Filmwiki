@@ -80,7 +80,7 @@ body{
 #legnezfilm{
   color: rgb(252, 186, 3);
   margin-left: 1%;
-  margin-top: 30%;
+  margin-top: 38%;
   font-size: 20px;
 }
 #sorozatok{
@@ -345,7 +345,7 @@ a:hover .hover-text3 {
   grid-row-gap: 0px;
   float: right;
   width: 24%;
-  height: 24%;
+  height: 680px;
   background-color: rgba(26, 0, 58, 0.95);
   margin-right: 0.5%;
   margin-top: -5%;
@@ -381,8 +381,8 @@ a:hover .hover-text3 {
     grid-row-gap: 0px;
     float: right;
     width: 24%;
-    height: 715px;
-    margin-top: 25%;
+    height: 660px;
+    margin-top: 15%;
     background-color: rgba(26, 0, 58, 0.95);
     margin-right: -24%;
     color: white;
