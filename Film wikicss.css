@@ -272,7 +272,7 @@ a:hover .hover-text3 {
 }
 /* Hoverek buttonok */
 .buttonok{
-  margin-top: 70%;
+  margin-top: 65%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -285,6 +285,7 @@ a:hover .hover-text3 {
   display: inline-block;
   font-size: 12px;
   margin: 4px 2px;
+  width: 90%;
   transition-duration: 0.4s;
   cursor: pointer;
 }
