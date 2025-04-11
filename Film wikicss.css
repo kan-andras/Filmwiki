@@ -202,7 +202,6 @@ body{
   transform: scale(1.1);  /* Kép megnövelése hover hatásra */
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);  /* Árnyék intenzitásának növelése */
 }
-
 .scrollmenuharom::-webkit-scrollbar {
   display: none;
 }
@@ -224,11 +223,13 @@ body{
   opacity: 0;
   transition: opacity 0.3s ease-in-out;  /* Zökkenőmentes megjelenítés */
 }
-
 /* Hover hatásra előbukkanó szöveg */
 .scrollmenu a:hover .hover-text {
   display: block;
-  opacity: 1;  /* Megjeleníti a szöveget */
+  opacity: 1; /* Megjeleníti a szöveget */  
+}
+.hoverszovegek{
+  margin-top: 1%;
 }
 .hover-text2 {
   position: absolute;
@@ -268,6 +269,35 @@ a:hover .hover-text2 {
 
 a:hover .hover-text3 {
   display: block; /* Ha az egér rámegy, megjelenik */
+}
+/* Hoverek buttonok */
+.buttonok{
+  margin-top: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button1 {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: rgba(255, 255, 255, 0.209); 
+  color: rgb(255, 255, 255); 
+  border: 1px solid black;
+}
+
+.button2:hover {
+  background-color: #494949;
+  color: white;
 }
 /* Navigációs nyílak */
 .scroll-arrow {
