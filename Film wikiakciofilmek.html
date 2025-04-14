@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="icon" type="image/x-icon" href="kepek/logo-removebg-preview.png">
     <link rel="stylesheet" href="Film wikikategoria.css">
-    <script src="hamburgerscript.js"></script>
+    <script src="menu.js"></script>
 </head>
 <body>
     <!-- <div class="navbar">
@@ -59,7 +59,10 @@
         </div> -->
 
 
-        <div class="navbar">
+            <!-- amit most hasznalok -->
+
+
+        <!-- <div class="navbar">
             <a href="" style="float: right;" class="menugomb">Sorozatok</a>
             <a href="" style="float: right;"class="menugomb">Legfelkapottabb filmek</a>
             <a href="#home" class="active"><img id="fimwikilogo" src="kepek/logo-removebg-preview.png" alt="logo"></a>
@@ -77,16 +80,32 @@
                   </div>
                 </div>
                 <section class="nav">
-                    <!--  checkbox to control the icon's state    -->
                     <input id="menu-toggle" type="checkbox" />
                     <label class="menu-button-container" for="menu-toggle">
                       <div class="menu-button"></div>
                     </label>
-                    <!--  main menu    -->
                     <ul class="menu">
                     </ul>
                   </section>
-            </div>
+            </div> -->
+
+
+            <div class="topnav" id="myTopnav">
+                <img class="active" style="width: 100px; height: 100px;" src="./kepek/logo-removebg-preview.png" alt="logo">
+                <div class="dropdown">
+                  <button class="dropbtn">Filmek 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div> 
+                  <a href="#news">Legfelkapottabb filmek</a>
+                <a href="#contact">Sorozatok</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
 
 
 
