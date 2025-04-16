@@ -716,7 +716,6 @@ table{
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
-    margin: 0;
   }
   
   .dropdown-content {
@@ -738,7 +737,7 @@ table{
   }
   
   .topnav a:hover, .dropdown:hover .dropbtn {
-    background-color: #555;
+    background-color: rgb(36, 36, 97);
     color: white;
   }
   
