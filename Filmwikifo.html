@@ -6,8 +6,25 @@
     <title>Film wikipédia</title>
     <link rel="icon" type="image/x-icon" href="kepek/logo-removebg-preview.png">
     <link rel="stylesheet" href="Film wikicss.css">
+    <script src="menu.js"></script>
 </head>
 <body>
+  <div class="topnav" id="myTopnav" style="margin-left: -8px; margin-top: -7px; margin-right: -3px;">
+    <a href="Filmwikifo.html" class="active"><img style="height: 30px; width: 50px;" src="./kepek/logo-removebg-preview.png" alt="logo"></a>
+    <div class="dropdown">
+      <button class="dropbtn">Filmek 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Film wikiakciofilmek.html">Akció Filmek</a>
+        <a href="Film wikisportosfilmek.html">Sport Filmek</a>
+        <a href="Film wikikhorrorfilmek.html">Horror Filmek</a>
+      </div>
+    </div> 
+      <a href="">Legfelkapottabb filmek</a>
+    <a href="Film wikisorozatok.html">Sorozatok</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
     <!--Slideshow-->
     <div class="slideshow-container">
       <div class="mySlides fade">
@@ -128,7 +145,7 @@
               <img src="kepek/a 6888. zaszloalj.jpg" alt="A 6888. Zászlóalj">
               <div class="hover-text"><strong><p class="hoverszovegek">A 6888. <br>Zászlóalj</p></strong>
                 <div class="buttonok">
-                  <form action="Filmek/">
+                  <form action="Filmek/A 6888. Zaszloalj.html">
                   <button type="submit" class="button1 button2">Megnézem</button>
                 </form>
               </div></div>  
@@ -137,7 +154,7 @@
               <img src="kepek/Dune profecia.jpg" alt="Dűne: Prófécia">
               <div class="hover-text"><strong><p class="hoverszovegek">Dűne <br>Prófécia</p></strong>
                 <div class="buttonok">
-                  <form action="Filmek/">
+                  <form action="Filmek/Dune Profecia.html">
                   <button type="submit" class="button1 button2">Megnézem</button>
                 </form>
               </div></div>  
@@ -155,7 +172,7 @@
               <img src="kepek/monte cristo grofja.jpg" alt="Monte Cristo grófja">
               <div class="hover-text"><strong><p class="hoverszovegek">Monte Cristo <br>grófja</p></strong>
                 <div class="buttonok">
-                  <form action="Filmek/">
+                  <form action="Filmek/Monte Cristo grofja.html">
                   <button type="submit" class="button1 button2">Megnézem</button>
                 </form>
               </div></div>  
@@ -302,9 +319,9 @@
             </a>
             <a href="#Felemelkedés">
               <img src="kepek/felemelkedes.jpg" alt="Felemelkedés">
-              <div class="hover-text2"><strong><p class="hoverszovegek">Tükrök</p></strong>
+              <div class="hover-text2"><strong><p class="hoverszovegek">Felemelkedés</p></strong>
                 <div class="buttonok">
-                  <form action="Filmek/felemelkedes.html">
+                  <form action="Filmek/Feledes.html">
                   <button type="submit" class="button1 button2">Megnézem</button>
                 </form>
               </div></div>  
@@ -349,7 +366,7 @@
               <img src="kepek/szomjusag.jpg" alt="Szomjúság">
               <div class="hover-text2"><strong><p class="hoverszovegek">Szomjúság</p></strong>
                 <div class="buttonok">
-                  <form action="Filmek/Szomjúság.html">
+                  <form action="Filmek/Szomjusag.html">
                   <button type="submit" class="button1 button2">Megnézem</button>
                 </form>
               </div></div>  
@@ -652,26 +669,6 @@
             <div class="div9b"> <h6 class="h6cimek">vélemény a(z) Avatár Az Utolsó Léghajlító-ról</h6></div>
             <div class="div10b" style="margin-left: 3%;"> <h8 class="h8cimek">Az eredeti film nagyon elsietettnek és unalmasnak éreztem de a sorozat kiküszöbölte a film hibáit.</h8></div>
             </div>
-          
-          
-      <!--Navbar-->
-      <div class="mobile-container">
-        <div class="topnav">
-          <a href="#home" class="active"><img id="fimwikilogo" src="kepek/logo-removebg-preview.png" alt="logo"></a>
-        <div id="myLinks">
-            <a id="menu" href="#news" style="margin: auto; text-decoration: none; color: white; padding: 25px 15px;">Filmek</a>
-            <a id="menu" href="#contact" style="margin: auto; text-decoration: none; color: white; padding: 25px 15px;">Legfelkapottabb filmek</a>
-            <a id="menu" href="#about" style="margin: auto; text-decoration: none; color: white; padding: 25px 15px;">Sorozatok</a>
-        </div id="hamburger" >
-          <a href="javascript:void(0);" class="icon" class="container" onclick="myFunction(this)" >
-            <i class="fa fa-bars" onclick="lenyilas()">
-              <div class="bar1" class="ham"></div>
-              <div class="bar2" class="ham"></div>
-              <div class="bar3" class="ham"></div>
-            </i>
-          </a>
-        </div>
-      </div>
       <!-- Lábléc -->
       <div class="parentlab">
         <div class="div1lab"> <h2 id="Kap">Kapcsolatok:</h2></div>
@@ -704,8 +701,6 @@
           setTimeout(showSlides, 4000); // Change image every 4 seconds
         }
         </script>
-        <!--Hamburger script-->
-        <script src="hamburgerscript.js"></script>
         <!--Scrollbar script-->
         <script src="universal.js"></script>
 </body>
