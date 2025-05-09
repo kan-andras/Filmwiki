@@ -573,6 +573,118 @@ a:hover .hover-text3 {
     height: 90%;
    }
   /*Média queri*/
+  @media screen and (max-width:1150px) {
+    /*toppok*/
+    .parenthav {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(11, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      float: right;
+      width: 24%;
+      height: 660px;
+      margin-top: 16.5%;
+      background-color: rgba(26, 0, 58, 0.95);
+      margin-right: -24%;
+      color: white;
+      }
+      /*scroll barok*/
+      .scroll-container {
+        position: relative;
+        width: 70%;
+        margin: auto;
+        float: left;
+        overflow: hidden;
+        background-color: rgba(26, 0, 58, 0.555);
+        padding: 10px 0;
+        margin-left: 1%;
+        margin-top: 1%;
+      }
+      .scroll-containerketto {
+        position: relative;
+        width: 70%;
+        margin: auto;
+        float: left;
+        overflow: hidden;
+        background-color: rgba(26, 0, 58, 0.555);
+        padding: 10px 0;
+        margin-left: 1%;
+        margin-top: 1%;
+      }
+      .scroll-containerharom {
+        position: relative;
+        width: 70%;
+        margin: auto;
+        float: left;
+        overflow: hidden;
+        background-color: rgba(26, 0, 58, 0.555);
+        padding: 10px 0;
+        margin-left: 1%;
+        margin-top: 7%;
+      }
+  }
+  @media screen and (max-width:1120px) {
+    /*toppok*/
+    .parenthav {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(11, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      float: right;
+      width: 24%;
+      height: 640px;
+      margin-top: 18%;
+      background-color: rgba(26, 0, 58, 0.95);
+      margin-right: -24%;
+      color: white;
+      }
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        float: right;
+        width: 24%;
+        height: 640px;
+        background-color: rgba(26, 0, 58, 0.95);
+        margin-right: 0.5%;
+        margin-top: -5%;
+        color: white;
+        }
+  }
+  @media screen and (max-width:1080px) {
+    /* Színészvéleménygrid */
+    .parentszinvelemeny {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      float: left;
+      margin-top: 22%;
+      width: 40%;
+      height: 480px;
+      margin-left: 8%;
+      background-color: rgb(26, 0, 58);
+      }
+      /* Közember vélemények */
+      .parentvelemeny {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        float: right;
+        width: 40%;
+        height: 480px;
+        margin-right: 8%;
+        margin-top: 22%;
+        background-color: rgb(26, 0, 58);
+        }
+  }
   @media screen and (max-width:576px) {
     .menugomb{
       display: none;
