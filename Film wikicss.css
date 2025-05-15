@@ -675,6 +675,7 @@ a:hover .hover-text3 {
       height: 480px;
       margin-left: 8%;
       background-color: rgb(26, 0, 58);
+      margin-bottom: 2%;
       }
       .parentszinvelemeny p{
         font-size: 14.5px;
@@ -692,6 +693,19 @@ a:hover .hover-text3 {
         margin-right: 8%;
         margin-top: 22%;
         background-color: rgb(26, 0, 58);
+        margin-bottom: 2%;
+        }
+        /* Sztár szövegek */
+        #kepszoveg1{
+          margin-top: 79%;
+          color:white;
+          margin-left: 15%;
+          font-size: 25px;
+        }
+        #kepszoveg2{
+          color:white;
+          margin-left: 8%;
+          font-size: 25px;
         }
   }
   @media screen and (max-width:1025px) {
@@ -767,6 +781,90 @@ a:hover .hover-text3 {
         margin-bottom: 2%;
         background-color: rgb(26, 0, 58);
         }
+        /* Sztár szövegek */
+        #kepszoveg1{
+          margin-top: 89%;
+          color:white;
+          margin-left: 11%;
+          font-size: 23px;
+        }
+        #kepszoveg2{
+          color:white;
+          margin-left: 3%;
+          font-size: 23px;
+        }
+  }
+  @media screen and (max-width:991px){
+    /*toppok*/
+    .parenthav {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(11, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      float: right;
+      width: 24%;
+      height: 620px;
+      margin-top: 22%;
+      background-color: rgba(26, 0, 58, 0.95);
+      margin-right: -24%;
+      color: white;
+      }
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        float: right;
+        width: 24%;
+        height: 620px;
+        background-color: rgba(26, 0, 58, 0.95);
+        margin-right: 0.5%;
+        margin-top: -5%;
+        color: white;
+        }
+        /* Színészvéleménygrid */
+    .parentszinvelemeny {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      float: left;
+      margin-top: 27%;
+      width: 40%;
+      height: 480px;
+      margin-left: 8%;
+      margin-bottom: 2%;
+      background-color: rgb(26, 0, 58);
+      }
+      /* Közember vélemények */
+      .parentvelemeny {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        float: right;
+        width: 40%;
+        height: 480px;
+        margin-right: 8%;
+        margin-top: 27%;
+        margin-bottom: 2%;
+        background-color: rgb(26, 0, 58);
+        }
+        /* Scroll menu igazítás */
+        #sorozatok{
+          color: rgb(252, 186, 3);
+          margin-left: 1%;
+          margin-top: 35%;
+          font-size: 20px;
+          height: 12px;
+        }
+  }
+  @media screen and (max-width:930px) {
+
   }
   @media screen and (max-width:576px) {
     .menugomb{
