@@ -862,9 +862,55 @@ a:hover .hover-text3 {
           font-size: 20px;
           height: 12px;
         }
+        .parentszinvelemeny p{
+          font-size: 14px;
+          padding-top: 5%;
+        }
   }
-  @media screen and (max-width:930px) {
-
+  @media screen and (max-width:945px) {
+    .parentszinvelemeny p{
+      font-size: 13.2px;
+      padding-top: 5%;
+      margin-left: 10px;
+    }
+    #kep1{
+      height: 160px;
+      padding-top: 30px;
+      width: 58%;
+    }
+    #kepszoveg1{
+      padding-top: 28%;
+      color:white;
+      margin-left: 11%;
+      font-size: 23px;
+    }
+    #kep2{
+      height: 140px;
+      padding-top: 70px;
+    }
+    
+  }
+  @media screen and (max-width:901px){
+    #kep1{
+      height: 160px;
+      margin-top: 10px;
+      width: 58%;
+    }
+    #kep2{
+      height: 140px;
+      padding-top: 40px;
+    }
+    .parentszinvelemeny p{
+      font-size: 13px;
+      padding-top: 2%;
+      padding-right: 90px;
+      width: 98%;
+    }
+    #kepszoveg2{
+      color:white;
+      margin-left: 5%;
+      font-size: 23px;
+    }
   }
   @media screen and (max-width:576px) {
     .menugomb{
