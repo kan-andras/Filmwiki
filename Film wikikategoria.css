@@ -73,43 +73,31 @@ body{
 .active{
   background-color: #4CAF50;
 }
-@media screen and (min-width: 768px) {
-  .nagykep{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
-    height: 50%;
-    margin-top: 7%; 
-    position: relative;
-    text-align: center;
-    color: white;
-    position: absolute;
-    top: 8px;
-    left: 16px;
-  }
+
+
+
+
+
+
+.nagykep{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 97%;
+  height: 68%;
+  margin-top: 66px; 
+  position: relative;
+  text-align: center;
+  color: white;
+  position: absolute;
 }
 
-@media screen and (max-width : 950px) {
+@media screen and (max-width: 768px) {
   .nagykep{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
-    height: 500px;
-    margin-top: 7%; 
-    position: relative;
-    text-align: center;
-    color: white;
-    margin-top: 10%;
-    position: absolute;
-    top: 8px;
-    left: 16px;
+    height: 50%;
   }
-}
-@media screen and (max-width: 650px) {
-  .nagykep{
-    margin-top: 20%;
+  .legfr{
+    margin-top: 470px;
   }
 }
 @media screen and (max-width:576px) {
@@ -117,10 +105,10 @@ body{
     height: 300px;
   }
   .legfr{
-    margin-top: 410px;
+    margin-top: 310px;
   }
 }
-@media screen and (min-width:576px) {
+@media screen and (min-width:768px) {
   .legfr{
     margin-top: 630px;
   }
