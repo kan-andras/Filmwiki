@@ -1143,6 +1143,7 @@ a:hover .hover-text3 {
     #legnezfilm{
       margin-top: 40%;
     }
+    /* Scrollmenü méretének nővelése */
     .scroll-container{
       width: 95%;
     }
@@ -1152,6 +1153,7 @@ a:hover .hover-text3 {
     .scroll-containerharom{
       width: 95%;
     }
+    /* Hoverek eltüntetése mediumon */
     .scrollmenu img {
       transition: none;
     }
@@ -1159,6 +1161,85 @@ a:hover .hover-text3 {
       transform: none;
       box-shadow: none;
     }
+    .scrollmenu a .hover-text {
+      display: none;
+      transform: none;
+      color: rgba(255, 255, 255, 0);
+      background-color: rgba(255, 255, 255, 0);
+      transition: none;
+    }
+    .scrollmenu a:hover .hover-text {
+      display: block;
+      opacity: 0;
+    }
+    .scrollmenuketto a {
+      text-decoration: none;
+    }
+    .scrollmenuketto img {
+      transition: none;  
+    }
+    .scrollmenuketto a:hover img {
+      transform: none;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0); 
+    }
+    .scrollmenuharom a {
+      text-decoration: none;
+      position: relative;
+    }
+    .scrollmenuharom img {
+      transition: none;
+    }
+    .scrollmenuharom a:hover img {
+      transform: none; 
+      box-shadow: 0 8px 12px rgba(255, 255, 255, 0);
+    }
+    .hoverszovegek{
+      margin-top: 1%;
+    }
+    .hover-text2 {
+      transform: none;
+      background-color: rgba(255, 255, 255, 0);
+      color: rgba(255, 255, 255, 0);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0); 
+      display: none;
+    }
+    a:hover .hover-text2 {
+      display: block;
+    }
+    .hover-text3 {
+      transform: none;
+      background-color: rgba(255, 255, 255, 0);
+      color: rgba(255, 255, 255, 0);
+      box-shadow: 0px 4px 10px rgba(255, 255, 255, 0);
+      display: none;
+    }
+    /* Hoverek buttonok */
+    .buttonok{
+      margin-top: 65%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .button1 {
+      border: none;
+      color: rgba(255, 255, 255, 0);
+      text-decoration: none;
+      transition-duration: none;
+      cursor: none;
+    }
+
+    .button2 {
+      background-color: rgba(255, 255, 255, 0); 
+      color: rgba(255, 255, 255, 0); 
+      border: none;
+    }
+
+    .button2:hover {
+      background-color: #ffffff00;
+      color: rgba(255, 255, 255, 0);
+    }
+  }
+  @media screen and (max-width:715px){
+    
   }
   @media screen and (max-width:576px) {
     .menugomb{
