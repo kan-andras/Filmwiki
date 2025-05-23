@@ -42,12 +42,24 @@ body{
 }
 /* Slideshow konténer */
 .slideshow-container {
-  max-width: 85%;
+  max-width: 84%;
   height: 540px;
   position: relative;
   margin-top: 7%;
   margin-left: 1%;
   z-index: -1;
+}
+#slideshowimg1{
+  width:117%; 
+  height: 580px;
+}
+#slideshowimg2{
+  width:117%; 
+  height: 580px;
+}
+#slideshowimg3{
+  width:117%; 
+  height: 580px;
 }
 /* körök és indikátorok */
 .dot {
@@ -1239,7 +1251,44 @@ a:hover .hover-text3 {
     }
   }
   @media screen and (max-width:715px){
-    
+    /* Slideshow konténer */
+    #slideshowimg1{
+      height: 60%;
+    }
+    #slideshowimg2{
+      height: 320px;
+    }
+    #slideshowimg3{
+      height: 320px;
+    }
+    /* Vélemények */
+    .parentvelemeny{
+      margin-top: 110%;
+    }
+    .parentszinvelemeny{
+      margin-top: 110%;
+    }
+    .parent{
+      margin-top: 130%;
+    }
+  }
+  @media screen and (max-width:670px){
+    .parent{
+      margin-top: 132%;
+    }
+  }
+  @media screen and (max-width:640px){
+    .parent{
+      margin-top: 135%;
+    }
+  }
+  @media screen and (max-width:615px){
+    .parent{
+      margin-top: 140%;
+    }
+    .parenthav{
+      margin-top: 90%;
+    }
   }
   @media screen and (max-width:576px) {
     .menugomb{
