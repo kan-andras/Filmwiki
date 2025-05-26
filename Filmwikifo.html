@@ -235,6 +235,11 @@
           </div>
           <button class="scroll-arrow scroll-right" onclick="scrollMenu(300)">&#10095;</button> <!-- Right Arrow -->
         </div>
+         <!-- side bar -->
+      <div id="sidebar" class="sidebar"></div>
+      <button onclick="toggleToplist()" id="toggleToplistBtn">Toplista</button>
+      <div id="toplistSidebar" class="toplist-sidebar">
+        <span class="closebtn" onclick="toggleToplist()">&times;</span>
       <!--Heti top grid-->
       <div class="parent">
         <div class="div1"><h2 style="color: rgb(252, 186, 3); text-align: center; width: 100%; font-size: 30px;"><strong>Heti top</strong></h2></div>
@@ -247,7 +252,6 @@
         <div class="div8" style="height: 40px; margin-top: -6%; margin-left: 8%;"> <h4>Beckham (2023)</h4></div>
         <div class="div9" style="height: 40px; margin-top: -6%; margin-left: 8%;"> <h4>Rocky Balboa (2006)</h4></div>
         <div class="div10" style="height: 40px; margin-top: -6%; margin-left: 8%;"><h4>Felemelkedés (2022)</h4></div>
-        <div class="div11" style="height: 40px; margin-top: -10%;margin-left: 8%;"><h4>Titánok (2018-2023)</h4></div>
         <div class="div12"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
         <div class="div13"> <img src="kepek/18+.png" alt="18+" style="margin-top: 5%; margin-left: 20%;"> </div>
         <div class="div14"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
@@ -257,7 +261,29 @@
         <div class="div18"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
         <div class="div19"> <img src="kepek/12 +.png" alt="12+" style="margin-top: 5%; margin-left: 20%;"> </div>
         <div class="div20"> <img src="kepek/12 +.png" alt="12+" style="margin-top: 5%; margin-left: 20%;"> </div>
-        <div class="div21"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        </div>
+        <!--Havi top grid-->
+      <div class="parenthav">
+        <div class="div1"><h2 style="color: rgb(252, 186, 3); text-align: center; width: 100%; font-size: 30px;"><strong>Havi top</strong></h2></div>
+        <div class="div2" style="height: 40px; margin-top: -6%; margin-left: 8%;"> <h4>Pelé (2016)</h4></div>
+        <div class="div3" style="height: 40px; margin-top: -10%; margin-left: 8%;"> <h4>Creed II (2019)</h4></div>
+        <div class="div4" style="height: 40px; margin-top: -10%; margin-left: 8%;"> <h4>Micimackó: Vér és méz 2. (2024)</h4></div>
+        <div class="div5" style="height: 40px; margin-top: -10%; margin-left: 8%;"> <h4>Ketrecharc - A leszámolás (2011)</h4></div>
+        <div class="div6" style="height: 40px; margin-top: -10%; margin-left: 8%;"> <h4>Chucky menyasszonya (1998)</h4></div>
+        <div class="div7" style="height: 40px; margin-top: -2%; margin-left: 8%;"> <h4>Zorro (2024)</h4></div>
+        <div class="div8" style="height: 40px; margin-top: -6%; margin-left: 8%;"> <h4>Beetlejuice Beetlejuice (2024)</h4></div>
+        <div class="div9" style="height: 40px; margin-top: -4%; margin-left: 8%;"> <h4>Képzeletbeli (2024)</h4></div>
+        <div class="div10" style="height: 40px; margin-top: -6%; margin-left: 8%;"><h4>Teletabik (2022)</h4></div>
+        <div class="div12"> <img src="kepek/12 +.png" alt="12+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div13"> <img src="kepek/12 +.png" alt="12+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div14"> <img src="kepek/18+.png" alt="18+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div15"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div16"> <img src="kepek/12 +.png" alt="12+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div17"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div18"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div19"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        <div class="div20"> <img src="kepek/12 +.png" alt="12+" style="margin-top: 5%; margin-left: 20%;"> </div>
+        </div>
         </div>
         <!--Legnézettebb filmek-->
         <div id="legnezfilm">
@@ -449,30 +475,6 @@
           </div>
           <button class="scroll-arrowk scroll-jobb" onclick="scrollMenuKetto(300)">&#10095;</button> <!-- Right Arrow -->
       </div>
-      <!--Havi top grid-->
-      <div class="parenthav">
-        <div class="div1"><h2 style="color: rgb(252, 186, 3); text-align: center; width: 100%; font-size: 30px;"><strong>Havi top</strong></h2></div>
-        <div class="div2" style="height: 40px; margin-top: -6%; margin-left: 8%;"> <h4>Pelé (2016)</h4></div>
-        <div class="div3" style="height: 40px; margin-top: -10%; margin-left: 8%;"> <h4>Creed II (2019)</h4></div>
-        <div class="div4" style="height: 40px; margin-top: -10%; margin-left: 8%;"> <h4>Micimackó: Vér és méz 2. (2024)</h4></div>
-        <div class="div5" style="height: 40px; margin-top: -10%; margin-left: 8%;"> <h4>Ketrecharc - A leszámolás (2011)</h4></div>
-        <div class="div6" style="height: 40px; margin-top: -10%; margin-left: 8%;"> <h4>Chucky menyasszonya (1998)</h4></div>
-        <div class="div7" style="height: 40px; margin-top: -2%; margin-left: 8%;"> <h4>Zorro (2024)</h4></div>
-        <div class="div8" style="height: 40px; margin-top: -6%; margin-left: 8%;"> <h4>Beetlejuice Beetlejuice (2024)</h4></div>
-        <div class="div9" style="height: 40px; margin-top: -4%; margin-left: 8%;"> <h4>Képzeletbeli (2024)</h4></div>
-        <div class="div10" style="height: 40px; margin-top: -6%; margin-left: 8%;"><h4>Teletabik (2022)</h4></div>
-        <div class="div11" style="height: 40px; margin-top: -10%;margin-left: 8%;"><h4>Gorilla bácsi (2005)</h4></div>
-        <div class="div12"> <img src="kepek/12 +.png" alt="12+" style="margin-top: 5%; margin-left: 20%;"> </div>
-        <div class="div13"> <img src="kepek/12 +.png" alt="12+" style="margin-top: 5%; margin-left: 20%;"> </div>
-        <div class="div14"> <img src="kepek/18+.png" alt="18+" style="margin-top: 5%; margin-left: 20%;"> </div>
-        <div class="div15"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
-        <div class="div16"> <img src="kepek/12 +.png" alt="12+" style="margin-top: 5%; margin-left: 20%;"> </div>
-        <div class="div17"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
-        <div class="div18"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
-        <div class="div19"> <img src="kepek/16 +.png" alt="16+" style="margin-top: 5%; margin-left: 20%;"> </div>
-        <div class="div20"> <img src="kepek/12 +.png" alt="12+" style="margin-top: 5%; margin-left: 20%;"> </div>
-        <div class="div21"> <img src="kepek/12 +.png" alt="12+" style="margin-top: 5%; margin-left: 20%;"> </div>
-        </div>
         <!--Sorozatok-->
         <div id="sorozatok">
           <h2>Sorozatok</h2>
@@ -708,5 +710,15 @@
         </script>
         <!--Scrollbar script-->
         <script src="universal.js"></script>
+        <script>
+          function toggleToplist() {
+            const sidebar = document.getElementById("toplistSidebar");
+            if (sidebar.classList.contains("open")) {
+              sidebar.classList.remove("open");
+            } else {
+              sidebar.classList.add("open");
+            }
+          }
+        </script>
 </body>
 </html>
